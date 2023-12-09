@@ -1,3 +1,9 @@
+.header {
+  background-color: white;
+  position: relative;
+  z-index: 100;
+}
+
 .sticky {
     background-color: white;
     position: sticky;
