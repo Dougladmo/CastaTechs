@@ -1,0 +1,17 @@
+.sticky {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    animation: slide-down 0.8s;
+}
+
+@keyframes slide-down {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

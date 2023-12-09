@@ -57,14 +57,16 @@ function Slider() {
     <div className='h-[550px] bg-blue-900 w-full m-auto relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='md:w-11/12 m-auto h-full flex flex-col items-center justify-between py-10 px-5 bg-center bg-cover duration-500'
+        className='md:w-11/12 m-auto h-full flex flex-col items-center justify-between py-10 px-5 bg-center bg-cover duration-500 md:flex md:flex-row md:justify-around'
       >
-        <h1 style={{color: `${slides[currentIndex].titleColor}`}} className={`drop-shadow-lg shadow-gray-500 text-left leading-normal text-4xl pt-8 font-bold uppercase`}>{slides[currentIndex].title} <span className='block text-white font-normal text-lg'>{slides[currentIndex].subTitle? `${slides[currentIndex].subTitle}` : ''}</span></h1>
-            <button style={{backgroundImage: `linear-gradient(${slides[currentIndex].buttonColor1}, ${slides[currentIndex].buttonColor2})`}} className={`uppercase text-white text-xl m-auto w-40 h-14 rounded-full hover:brightness-125 transition duration-500`} >Saiba mais</button>
-        <ul className='list-disc flex flex-col'>
-            <h2 className='text-2xl max-w-xs text-left text-white' >{slides[currentIndex].liTitle? `${slides[currentIndex].liTitle}` : ''}</h2>
+        <div id='call-to-action' className='self-start flex flex-col items-center'>
+          <h1 style={{color: `${slides[currentIndex].titleColor}`}} className={`drop-shadow-lg shadow-gray-500 text-left leading-normal text-4xl md:text-6xl pt-8 font-bold uppercase`}>{slides[currentIndex].title} <span className='block text-white font-normal text-lg'>{slides[currentIndex].subTitle? `${slides[currentIndex].subTitle}` : ''}</span></h1>
+          <button style={{backgroundImage: `linear-gradient(${slides[currentIndex].buttonColor1}, ${slides[currentIndex].buttonColor2})`}} className={`uppercase text-white text-xl m-auto w-40 md:w-56 h-14 mt-10 md:ml-10 md:h-16 rounded-full hover:brightness-125 transition duration-500`} >Saiba mais</button>
+        </div>
+        <ul className='list-disc flex flex-col md:self-end md:mb-10'>
+            <h2 className='text-2xl md:text-4xl md:pb-5 md:max-w-lg max-w-xs text-left text-white' >{slides[currentIndex].liTitle? `${slides[currentIndex].liTitle}` : ''}</h2>
             {slides[currentIndex].li?.map((item) => {
-              return <li className='text-lg ml-8 text-white'>{item}</li>
+              return <li className='text-lg md:text-2xl md:ml-16 ml-8 text-white'>{item}</li>
             })}
         </ul>
       </div>
