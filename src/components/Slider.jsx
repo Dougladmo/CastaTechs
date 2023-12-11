@@ -10,7 +10,7 @@ function Slider() {
     {
       title: 'Desenvolvimento Java',
       titleColor: '#3accc3',
-      liTitle: 'Potencializando Seu Negócio',
+      subTitle: 'Potencializando Seu Negócio',
       li: ['Desenvolvimento Java 6 a 21 LTS', 'Spring Framework and Spring Boot', 'Microsservice com SpringBoot', 'Integrações com API REST Full', 'Front end JFS, JSP e Angular (Node.js)', 'APIGEE Edge Gerenciamento de API'],
       url: background1,
       buttonColor1: '#8da157',
