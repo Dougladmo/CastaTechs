@@ -1,16 +1,18 @@
 import React from 'react'
-import Slider from './components/Slider'
 import Header from './components/layout/Header'
-import Cart from './assets/cart.webp'
-import Consul from './assets/consultoria.webp'
+import Footer from './components/layout/Footer'
+import MobileContactBar from './components/layout/MobileContactBar'
 
 import { Outlet } from 'react-router-dom'
 
 const App = () => {
+
   return (
     <div>
       <Header />
       <Outlet />
+      <Footer />
+      <MobileContactBar />
     </div>
   )
 }

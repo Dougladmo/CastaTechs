@@ -1,12 +1,20 @@
 import React from 'react'
 import Slider from '../components/Slider'
+import FuncionalityCard from '../components/FuncionalityCard'
+
+
+import PaymentsImg from '../assets/PaymentsImg.webp'
+import EnviosImg from '../assets/enviosImg.webp'
+import AmazonServerImg from '../assets/AmazonServerImg.webp'
+import AppMobile from '../assets/AppMobileImg.webp'
+import ProdsImg from '../assets/GestProdsImg.webp'
+import LayoutImg from '../assets/layoutImg.webp'
+import AnaliseImg from '../assets/analiseImg.webp'
 import Cart from '../assets/cart.webp'
 import Consul from '../assets/consultoria.webp'
 import Solution from '../assets/soluções.webp'
 import Services from '../assets/services.webp'
-import MobileContactBar from '../components/layout/MobileContactBar'
 import Sobre from '../assets/sobre.webp'
-import Footer from '../components/layout/Footer'
 
 const Home = () => {
   return (
@@ -69,8 +77,46 @@ const Home = () => {
           <h3 className='text-3xl drop-shadow-md text-blue-400 py-5 text-center'>Sobre nós</h3>
         </div>
       </div>
-      <Footer />
-      <MobileContactBar />
+      <div id='Serviços' className='py-10 bg-blue-800 flex flex-col gap-5'>
+        <div className='px-6'>
+          <h3 style={{ textShadow: '0px 0px 12px' }} className='text-2xl text-center text-white uppercase leading-10'>uma loja virtual completa, customizável, multi canal de vendas e indicadores de decisão.</h3>
+          <p className='text-white text-base pt-3'>Analise o que acontece dentro da sua loja e planeje as decisões corretas com base nas informações  e dados dos indicadores, esteja sempre atualizado.</p>
+          <img className='w-full py-5 rounded-xl' src={AnaliseImg} alt="imagens de grafico" />
+          <p className='text-white text-right text-base pt-3'>Integração com o Google Analytics
+            Mais métricas para seguir crescendo
+            Realize a segmentação das suas campanhas</p>
+          <h3 style={{ textShadow: '0px 0px 12px' }} className='my-5 text-3xl text-center text-white uppercase leading-10'>PLANOS COM MELHOR CUSTO & BENEFÍCIO</h3>
+          <p className='text-white text-center text-lg font-medium'>Todas as ferramentas para gerenciar o seu negócio online
+            Fique por dentro do desempenho do seu negócio com métricas</p>
+          <h3 className='mt-5 text-3xl text-center text-white leading-10'>Conheça todas as nossas funcionalidades</h3>
+        </div>
+        <FuncionalityCard
+          img={LayoutImg}
+          serviceTitle='LAYOUTS PROFISSIONAIS' ServiceSubTitle='Mais de 40 layouts prontos para sua loja impactar seus clientes'
+        />
+        <FuncionalityCard
+          img={PaymentsImg}
+          serviceTitle='MEIOS DE PAGAMENTOS' ServiceSubTitle='Cielo, PagSeguro, Moip, Mercado Pago, PayPal ou PayU'
+        />
+        <FuncionalityCard
+          img={EnviosImg}
+          serviceTitle='MEIOS DE ENVIO
+          E FRETES' ServiceSubTitle='Todo o Brasil via Correios (PAC ou Sedex), JadLog  e muito mais'
+        />
+        <FuncionalityCard
+          img={ProdsImg}
+          serviceTitle='GESTÃO DE PRODUTOS' ServiceSubTitle='Estoque atualizado em todos os seus canais online e várias fotos'
+        />
+        <FuncionalityCard
+          img={AmazonServerImg}
+          serviceTitle='HOSPEDAGEM SERVER AMAZON' ServiceSubTitle='Uma plataforma estável, segura e garantia de 99% On'
+        />
+        <FuncionalityCard
+          img={AppMobile}
+          serviceTitle='APLICATIVO
+          MOBILE' ServiceSubTitle='Administre estoque e vendas do celular com Android ou iOS.'
+        />
+      </div>
     </div>
   )
 }
