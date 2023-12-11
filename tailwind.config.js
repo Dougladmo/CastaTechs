@@ -14,7 +14,7 @@ export default {
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
      '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       inner: '0px -80px 37px -93px inset #000',
-      top: '-1px -26px 20px -32px  #000',
+      top: '-1px -26px 15px -32px  #000',
       none: 'none',
     },
     extend: {},
