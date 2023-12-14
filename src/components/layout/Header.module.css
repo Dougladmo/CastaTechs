@@ -1,16 +1,22 @@
 .header {
   background-color: white;
+  box-shadow: 0px 0px 7px 0px #000;
   position: relative;
   z-index: 100;
 }
 
+.header, .sticky {
+  text-shadow: 1px 1px 6px #00000022;
+}
+
 .sticky {
     background-color: white;
+    box-shadow: 0px 0px 7px 0px #000;
     position: sticky;
     top: 0;
     z-index: 20;
 
-    animation: slide-down 0.8s;
+    animation: slide-down 0.5s;
 }
 
 @keyframes slide-down {

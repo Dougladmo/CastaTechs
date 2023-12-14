@@ -11,7 +11,6 @@ const Header = () => {
     useEffect(() => {
       const HandleScroll = () => {
         const scrollTop = window.scrollY;
-        console.log(scrollTop)
         if (scrollTop > 130) {
           setScrolled(true);
         } else {
