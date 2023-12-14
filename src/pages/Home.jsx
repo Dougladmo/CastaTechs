@@ -1,6 +1,8 @@
 import React from 'react'
 import Slider from '../components/Slider'
 import FuncionalityCard from '../components/FuncionalityCard'
+import { StoreAnalytics } from '../components/StoreAnalytics.1';
+
 import { IoIosPhonePortrait, IoLogoSkype } from "react-icons/io";
 import { FaRegPaperPlane } from "react-icons/fa6";
 
@@ -11,7 +13,6 @@ import AmazonServerImg from '../assets/AmazonServerImg.webp'
 import AppMobile from '../assets/AppMobileImg.webp'
 import ProdsImg from '../assets/GestProdsImg.webp'
 import LayoutImg from '../assets/layoutImg.webp'
-import AnaliseImg from '../assets/analiseImg.webp'
 import Cart from '../assets/cart.webp'
 import Consul from '../assets/consultoria.webp'
 import Solution from '../assets/soluções.webp'
@@ -65,59 +66,57 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id='img links' className='md:flex md:justify-center'>
+      <div id='img links' className='md:flex md:justify-center my-5'>
         <div className='py-5'>
-          <img className='rounded-full w-10/12 md:w-2/3 m-auto opacity-60 transition duration-500 hover:opacity-100 hover:scale-110' src={Solution} alt="soluções img" />
-          <h3 className='text-3xl drop-shadow-md text-blue-400 py-5 text-center'>Soluções</h3>
+          <img className='rounded-full w-1/2 md:w-1/2 m-auto opacity-60 transition duration-500 hover:opacity-100 hover:scale-110' src={Solution} alt="soluções img" />
+          <h3 className='text-2xl drop-shadow-md text-blue-400 py-5 text-center'>Soluções</h3>
         </div>
         <div className='py-5'>
-          <img className='rounded-full w-10/12 md:w-2/3 m-auto opacity-60 transition duration-500 hover:opacity-100 hover:scale-110' src={Services} alt="services img" />
-          <h3 className='text-3xl drop-shadow-md text-blue-400 py-5 text-center'>Serviços</h3>
+          <img className='rounded-full w-1/2 md:w-1/2 m-auto opacity-60 transition duration-500 hover:opacity-100 hover:scale-110' src={Services} alt="services img" />
+          <h3 className='text-2xl drop-shadow-md text-blue-400 py-5 text-center'>Serviços</h3>
         </div>
         <div className='py-5'>
-          <img className='rounded-full w-10/12 md:w-2/3 m-auto opacity-60 transition duration-500 hover:opacity-100 hover:scale-110' src={Sobre} alt="sobre img" />
-          <h3 className='text-3xl drop-shadow-md text-blue-400 py-5 text-center'>Sobre nós</h3>
+          <img className='rounded-full w-1/2 md:w-1/2 m-auto opacity-60 transition duration-500 hover:opacity-100 hover:scale-110' src={Sobre} alt="sobre img" />
+          <h3 className='text-2xl drop-shadow-md text-blue-400 py-5 text-center'>Sobre nós</h3>
         </div>
       </div>
       <div id='Serviços' className='py-10 bg-blue-800 flex flex-col gap-5'>
-        <div className='px-6'>
-          <h3 style={{ textShadow: '0px 0px 12px' }} className='text-2xl text-center text-white uppercase leading-10'>uma loja virtual completa, customizável, multi canal de vendas e indicadores de decisão.</h3>
-          <p className='text-white text-base pt-3'>Analise o que acontece dentro da sua loja e planeje as decisões corretas com base nas informações  e dados dos indicadores, esteja sempre atualizado.</p>
-          <img className='w-full py-5 rounded-xl' src={AnaliseImg} alt="imagens de grafico" />
-          <p className='text-white text-right text-base pt-3'>Integração com o Google Analytics
-            Mais métricas para seguir crescendo
-            Realize a segmentação das suas campanhas</p>
+        <div className='lg:max-w-5xl lg:m-auto px-6'>
+          <h3 style={{ textShadow: '0px 0px 12px' }} className='text-2xl mb-10 lg:text-4xl lg:leading-relaxed text-center text-white uppercase leading-10'>uma loja virtual completa, customizável, multi canal de vendas e indicadores de decisão.</h3>
+          <StoreAnalytics />
           <h3 style={{ textShadow: '0px 0px 12px' }} className='my-5 text-3xl text-center text-white uppercase leading-10'>PLANOS COM MELHOR CUSTO & BENEFÍCIO</h3>
           <p className='text-white text-center text-lg font-medium'>Todas as ferramentas para gerenciar o seu negócio online
             Fique por dentro do desempenho do seu negócio com métricas</p>
           <h3 className='mt-5 text-3xl text-center text-white leading-10'>Conheça todas as nossas funcionalidades</h3>
         </div>
-        <FuncionalityCard
-          img={LayoutImg}
-          serviceTitle='LAYOUTS PROFISSIONAIS' ServiceSubTitle='Mais de 40 layouts prontos para sua loja impactar seus clientes'
-        />
-        <FuncionalityCard
-          img={PaymentsImg}
-          serviceTitle='MEIOS DE PAGAMENTOS' ServiceSubTitle='Cielo, PagSeguro, Moip, Mercado Pago, PayPal ou PayU'
-        />
-        <FuncionalityCard
-          img={EnviosImg}
-          serviceTitle='MEIOS DE ENVIO
-          E FRETES' ServiceSubTitle='Todo o Brasil via Correios (PAC ou Sedex), JadLog  e muito mais'
-        />
-        <FuncionalityCard
-          img={ProdsImg}
-          serviceTitle='GESTÃO DE PRODUTOS' ServiceSubTitle='Estoque atualizado em todos os seus canais online e várias fotos'
-        />
-        <FuncionalityCard
-          img={AmazonServerImg}
-          serviceTitle='HOSPEDAGEM SERVER AMAZON' ServiceSubTitle='Uma plataforma estável, segura e garantia de 99% On'
-        />
-        <FuncionalityCard
-          img={AppMobile}
-          serviceTitle='APLICATIVO
-          MOBILE' ServiceSubTitle='Administre estoque e vendas do celular com Android ou iOS.'
-        />
+        <div id='services-cards' className='w-full lg:max-w-5xl lg:m-auto lg:gap-8 lg:grid lg:grid-cols-3'>
+          <FuncionalityCard
+            img={LayoutImg}
+            serviceTitle='LAYOUTS PROFISSIONAIS' ServiceSubTitle='Mais de 40 layouts prontos para sua loja impactar seus clientes'
+          />
+          <FuncionalityCard
+            img={PaymentsImg}
+            serviceTitle='MEIOS DE PAGAMENTOS' ServiceSubTitle='Cielo, PagSeguro, Moip, Mercado Pago, PayPal ou PayU'
+          />
+          <FuncionalityCard
+            img={EnviosImg}
+            serviceTitle='MEIOS DE ENVIO
+            E FRETES' ServiceSubTitle='Todo o Brasil via Correios (PAC ou Sedex), JadLog  e muito mais'
+          />
+          <FuncionalityCard
+            img={ProdsImg}
+            serviceTitle='GESTÃO DE PRODUTOS' ServiceSubTitle='Estoque atualizado em todos os seus canais online e várias fotos'
+          />
+          <FuncionalityCard
+            img={AmazonServerImg}
+            serviceTitle='HOSPEDAGEM SERVER AMAZON' ServiceSubTitle='Uma plataforma estável, segura e garantia de 99% On'
+          />
+          <FuncionalityCard
+            img={AppMobile}
+            serviceTitle='APLICATIVO
+            MOBILE' ServiceSubTitle='Administre estoque e vendas do celular com Android ou iOS.'
+          />
+        </div>
       </div>
       <div id='fale-conosco' className='w-full flex flex-col bg-cyan-500 py-10'>
         <div className='w-full bg-cyan-500 flex py-8 text-white text-center flex-col items-center justify-center gap-7'>
