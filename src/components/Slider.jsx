@@ -84,11 +84,11 @@ function Slider() {
       </div>
       {/* Left Arrow */}
       <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:ml-5 left-5 text-2xl rounded-sm p-2 hover:bg-gray-300 hover:opacity-100 opacity-50 md:bg-gray-300 md:opacity-100 md:hover:opacity-50 transition duration-300 text-black cursor-pointer'>
-        <MdOutlineKeyboardArrowLeft className='text-white hover:text-black md:text-black' onClick={prevSlide} size={30} />
+        <MdOutlineKeyboardArrowLeft onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
       <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:mr-5 right-5 text-2xl rounded-sm p-2 hover:bg-gray-300  opacity-50 md:bg-gray-300 md:opacity-100 md:hover:opacity-50 transition duration-300 text-black cursor-pointer'>
-        <MdOutlineKeyboardArrowRight className='text-white hover:text-black md:text-black' onClick={nextSlide} size={30} />
+        <MdOutlineKeyboardArrowRight onClick={nextSlide} size={30} />
       </div>
       <div className='flex top-4 justify-center py-2'>
         {slides.map((slide, slideIndex) => (
