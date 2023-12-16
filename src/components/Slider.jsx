@@ -72,7 +72,7 @@ function Slider() {
         className='md:w-11/12 m-auto h-full flex flex-col items-center justify-between py-10 px-5 bg-center bg-cover duration-500 md:flex md:flex-row md:justify-around'
       >
         <div id='call-to-action' className='self-start flex flex-col items-center'>
-          <h1 style={{color: `${slides[currentIndex].titleColor}`}} className={`drop-shadow-lg shadow-gray-500 text-left leading-normal text-4xl lg:text-6xl pt-8 font-bold uppercase`}>{slides[currentIndex].title} <span className='block text-white font-normal text-lg'>{slides[currentIndex].subTitle? `${slides[currentIndex].subTitle}` : ''}</span></h1>
+          <h1 style={{color: `${slides[currentIndex].titleColor}`}} className={`drop-shadow-lg shadow-gray-500 text-left leading-normal text-4xl lg:text-6xl pt-8 font-bold uppercase ${currentIndex == 0 ? 'break-all' : ''}`}>{slides[currentIndex].title} <span className='block text-white font-normal text-lg'>{slides[currentIndex].subTitle? `${slides[currentIndex].subTitle}` : ''}</span></h1>
           <button style={{backgroundImage: `linear-gradient(${slides[currentIndex].buttonColor1}, ${slides[currentIndex].buttonColor2})`}} className={`uppercase text-white text-xl m-auto w-40 md:w-56 h-14 mt-10 md:ml-10 md:h-16 rounded-full hover:brightness-125 transition duration-500`} >Saiba mais</button>
         </div>
         <ul className='list-disc flex flex-col md:self-end md:mb-10'>
@@ -83,12 +83,12 @@ function Slider() {
         </ul>
       </div>
       {/* Left Arrow */}
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:ml-5 left-5 text-2xl rounded-sm p-2 bg-gray-300 hover:opacity-50 transition duration-300 text-black cursor-pointer'>
-        <MdOutlineKeyboardArrowLeft onClick={prevSlide} size={30} />
+      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:ml-5 left-5 text-2xl rounded-sm p-2 hover:bg-gray-300 hover:opacity-100 opacity-50 md:bg-gray-300 md:opacity-100 md:hover:opacity-50 transition duration-300 text-black cursor-pointer'>
+        <MdOutlineKeyboardArrowLeft className='text-white hover:text-black md:text-black' onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:mr-5 right-5 text-2xl rounded-sm p-2 bg-gray-300 hover:opacity-50 transition duration-300 text-black cursor-pointer'>
-        <MdOutlineKeyboardArrowRight onClick={nextSlide} size={30} />
+      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:mr-5 right-5 text-2xl rounded-sm p-2 hover:bg-gray-300  opacity-50 md:bg-gray-300 md:opacity-100 md:hover:opacity-50 transition duration-300 text-black cursor-pointer'>
+        <MdOutlineKeyboardArrowRight className='text-white hover:text-black md:text-black' onClick={nextSlide} size={30} />
       </div>
       <div className='flex top-4 justify-center py-2'>
         {slides.map((slide, slideIndex) => (

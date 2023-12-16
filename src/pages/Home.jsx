@@ -119,23 +119,23 @@ const Home = () => {
         </div>
       </div>
       <div id='fale-conosco' className='w-full flex flex-col bg-cyan-500 py-10'>
-        <div className='w-full bg-cyan-500 flex py-8 text-white text-center flex-col items-center justify-center gap-7'>
+        <div className='w-full px-5 bg-cyan-500 flex py-8 text-white text-center flex-col items-center justify-center gap-7'>
           <h3 className='text-5xl tracking-widest uppercase font-normal'>Fale <span className='block pt-5'>conosco</span></h3>
           <p className='text-2xl lg:text-xl lg:font-normal font-medium font'>Temos satisfação em atender!
             Queremos ouvir sobre sua necessidade e propor a melhor solução.</p>
         </div>
         <div id='contact-cards' className='lg:flex lg:m-auto lg:w-3/4'>
-          <div className={`h-72 w-full flex flex-col text-white items-center justify-center gap-2 bg-[#a6c54a]`}>
+          <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-2 bg-[#a6c54a]`}>
             <IoIosPhonePortrait size={55} className='text-white' />
             <h4 className='text-4xl font-medium'>Fones</h4>
             <p className='text-center text-xl mb-2'>(11) 96061-5651 <span className='block pt-2'>(11) 96061-5651</span></p>
           </div>
-          <div className={`h-72 w-full flex flex-col items-center justify-center gap-4 bg-[#f6f6f6]`}>
+          <div className={`h-72 px-5 w-full flex flex-col items-center justify-center gap-4 bg-[#f6f6f6]`}>
             <FaRegPaperPlane size={55} />
             <h4 className='text-3xl font-medium'>Email</h4>
             <p className='text-center text-xl mb-2'>contato@castatecnologia.com <span className='block pt-2'>info@castatecnologia.com</span></p>
           </div>
-          <div className={`h-72 w-full flex flex-col text-white items-center justify-center gap-8 bg-[#437da3]`}>
+          <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-8 bg-[#437da3]`}>
             <IoLogoSkype size={55} />
             <h4 className='text-3xl font-medium'>Skype</h4>
             <p className='text-center text-xl mb-2'>Casta Tecnologia</p>
