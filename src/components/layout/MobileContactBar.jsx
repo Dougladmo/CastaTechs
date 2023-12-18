@@ -4,11 +4,11 @@ import { IoMail } from "react-icons/io5";
 
 const MobileContactBar = () => {
   return (
-    <div className='sticky bottom-0 w-full h-14 bg-white flex items-center md:hidden'>
+    <div className='sticky bottom-0 flex items-center w-full bg-white h-14 md:hidden'>
       <ul className='flex items-center m-auto'>
-        <li className='px-8 sm:px-16 border-r-2 border-gray-400'><a href="#"><FaPhoneAlt className='text-green-600' size={25} /></a></li>
-        <li className='px-8 sm:px-16 border-r-2 border-gray-400'><a href="#"><IoMail className='text-pink-700' size={25} /></a></li>
-        <li className='px-8 sm:px-16 border-r-2 border-gray-400'><a href="#"><FaFacebook className='text-blue-800' size={25} /></a></li>
+        <li className='px-8 border-r-2 border-gray-400 sm:px-16'><a href="#"><FaPhoneAlt className='text-green-600' size={25} /></a></li>
+        <li className='px-8 border-r-2 border-gray-400 sm:px-16'><a href="#"><IoMail className='text-pink-700' size={25} /></a></li>
+        <li className='px-8 border-r-2 border-gray-400 sm:px-16'><a href="#"><FaFacebook className='text-blue-800' size={25} /></a></li>
         <li className='px-8 sm:px-16'><a href="#"><FaCommentAlt className='text-green-600' size={25} /></a></li>
       </ul>
     </div>
