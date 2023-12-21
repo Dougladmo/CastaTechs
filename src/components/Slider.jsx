@@ -55,10 +55,9 @@ function Slider() {
   };
 
   const SlideInterval = () => {
-    console.log('auto next rodando...') 
     setInterval(() => {
       nextSlide()
-    }, 8000);
+    }, 10000);
   }
 
   useEffect(() => {
