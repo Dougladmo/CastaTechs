@@ -3,6 +3,8 @@ import Slider from '../components/Slider'
 import FuncionalityCard from '../components/FuncionalityCard'
 import { StoreAnalytics } from '../components/StoreAnalytics.1';
 
+import { Bounce, Slide, Fade } from 'react-awesome-reveal';
+
 import { IoIosPhonePortrait, IoLogoSkype } from "react-icons/io";
 import { FaRegPaperPlane } from "react-icons/fa6";
 
@@ -25,47 +27,53 @@ const Home = () => {
       <Slider />
       <div id='solucoes' className='w-full py-5 m-auto bg-gray-100 md:w-9/12 mt-14'>
         <h3 className='flex flex-col gap-4 pb-10 m-auto text-4xl font-bold text-center text-blue-500 drop-shadow-md md:text-5xl md:mx-28'><span className='uppercase md:self-start '>Soluções que</span><span className='uppercase md:self-center'>transformam</span><span className='uppercase md:self-end'>seu negócio</span></h3>
-        <div id='sua-loja-wrapper' className='items-baseline lg:grid lg:grid-cols-2 lg:justify-evenly shadow-top md:py-5'>
-          <div id='sua-loja' className='md:h-full'>
-            <img className='w-40 m-auto md:w-44' src={Cart} alt="litle cart store" />
-            <h4 className='max-w-[340px] m-auto text-center text-slate-700 font-semibold drop-shadow-md text-3xl'>CRIE SUA LOJA VIRTUAL</h4>
-            <div className='shadow-top flex flex-col lg:gap-5 text-slate-700 font-semibold items-center max-w-[340px] m-auto mt-4'>
-              <h4 className='my-2 text-2xl text-center drop-shadow-lg'>E-COMMERCE</h4>
-              <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
-                <li>Sua Loja Aberta 24hrs por dia</li>
-                <li>Publique seus produtos com fotos e destaques</li>
-                <li>Vários Meios de Pagamento Seguro</li>
-                <li>Checkout Transparente</li>
-                <li>Integração com Facebook e Instagram</li>
-                <li>Sincronizado com Mercado Livre</li>
-                <li>SEO: Otimização melhores práticas </li>
-                <li>Plataforma responsiva: smart, ipad, note, desktop</li>
-                <li>E tem mais veja...</li>
-              </ul>
-              <a className='w-56 py-5 m-auto mt-6 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Agenda Uma Visita</a>
+        <Fade duration={1500}>
+          <div id='sua-loja-wrapper' className='items-baseline lg:grid lg:grid-cols-2 lg:justify-evenly shadow-top md:py-5'>
+            <Slide duration={1500} direction='left'>
+              <div id='sua-loja' className='md:h-full'>
+                <img className='w-40 m-auto md:w-44' src={Cart} alt="litle cart store" />
+                <h4 className='max-w-[340px] m-auto text-center text-slate-700 font-semibold drop-shadow-md text-3xl'>CRIE SUA LOJA VIRTUAL</h4>
+                <div className='shadow-top flex flex-col lg:gap-5 text-slate-700 font-semibold items-center max-w-[340px] m-auto mt-4'>
+                  <h4 className='my-2 text-2xl text-center drop-shadow-lg'>E-COMMERCE</h4>
+                  <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
+                    <li>Sua Loja Aberta 24hrs por dia</li>
+                    <li>Publique seus produtos com fotos e destaques</li>
+                    <li>Vários Meios de Pagamento Seguro</li>
+                    <li>Checkout Transparente</li>
+                    <li>Integração com Facebook e Instagram</li>
+                    <li>Sincronizado com Mercado Livre</li>
+                    <li>SEO: Otimização melhores práticas </li>
+                    <li>Plataforma responsiva: smart, ipad, note, desktop</li>
+                    <li>E tem mais veja...</li>
+                  </ul>
+                  <a className='w-56 py-5 m-auto mt-6 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Agenda Uma Visita</a>
+                </div>
             </div>
+            </Slide>
+            <Slide direction='right'>
+              <div id='totvs consultoria' className='md:h-full md:mt-0 mt-7'>
+                <img className='w-40 m-auto md:w-60' src={Consul} alt="litle cart store" />
+                <h4 className='max-w-[340px] md:max-w-none m-auto text-center text-slate-700 font-semibold drop-shadow-md text-3xl'>CONSULTORIA ERP TOTVS</h4>
+                <div className='shadow-top flex flex-col lg:gap-[19.5px] text-slate-700 font-semibold items-center max-w-[340px] m-auto mt-4'>
+                  <h4 className='my-2 text-2xl text-center drop-shadow-lg'>PROTHEUS e RM</h4>
+                  <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
+                    <li>Implantação de sistemas ERP TOTVS</li>
+                    <li>Desenvolvimento AdvPL Protheus</li>
+                    <li>Melhorias na Folha de Pagamento</li>
+                    <li>Consultoria Independente</li>
+                    <li>Redução de custos pra sua empresa</li>
+                    <li>Experiencia no que faz Disseminação da cultura </li>
+                    <li>Consultoria Entregas Legais </li>
+                    <li>Integrações de sistemas</li>
+                    <li>Estamos a disposição...</li>
+                  </ul>
+                  <a className='w-56 py-5 m-auto mt-5 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Agenda Uma Visita</a>
+                </div>
+              </div>
+            </Slide>
           </div>
-          <div id='totvs consultoria' className='md:h-full md:mt-0 mt-7'>
-            <img className='w-40 m-auto md:w-60' src={Consul} alt="litle cart store" />
-            <h4 className='max-w-[340px] md:max-w-none m-auto text-center text-slate-700 font-semibold drop-shadow-md text-3xl'>CONSULTORIA ERP TOTVS</h4>
-            <div className='shadow-top flex flex-col lg:gap-[19.5px] text-slate-700 font-semibold items-center max-w-[340px] m-auto mt-4'>
-              <h4 className='my-2 text-2xl text-center drop-shadow-lg'>PROTHEUS e RM</h4>
-              <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
-                <li>Implantação de sistemas ERP TOTVS</li>
-                <li>Desenvolvimento AdvPL Protheus</li>
-                <li>Melhorias na Folha de Pagamento</li>
-                <li>Consultoria Independente</li>
-                <li>Redução de custos pra sua empresa</li>
-                <li>Experiencia no que faz Disseminação da cultura </li>
-                <li>Consultoria Entregas Legais </li>
-                <li>Integrações de sistemas</li>
-                <li>Estamos a disposição...</li>
-              </ul>
-              <a className='w-56 py-5 m-auto mt-5 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Agenda Uma Visita</a>
-            </div>
-          </div>
+        </Fade>
         </div>
-      </div>
       <div id='img links' className='my-5 md:flex md:justify-center'>
         <div className='py-5'>
           <img className='w-1/2 m-auto transition duration-500 rounded-full md:w-1/2 opacity-60 hover:opacity-100 hover:scale-110' src={Solution} alt="soluções img" />
@@ -90,32 +98,34 @@ const Home = () => {
           <h3 className='mt-5 text-3xl leading-10 text-center text-white'>Conheça todas as nossas funcionalidades</h3>
         </div>
         <div id='services-cards' className='w-full lg:max-w-5xl lg:m-auto lg:gap-8 lg:grid lg:grid-cols-3'>
-          <FuncionalityCard
-            img={LayoutImg}
-            serviceTitle='LAYOUTS PROFISSIONAIS' ServiceSubTitle='Mais de 40 layouts prontos para sua loja impactar seus clientes'
-          />
-          <FuncionalityCard
-            img={PaymentsImg}
-            serviceTitle='MEIOS DE PAGAMENTOS' ServiceSubTitle='Cielo, PagSeguro, Moip, Mercado Pago, PayPal ou PayU'
-          />
-          <FuncionalityCard
-            img={EnviosImg}
-            serviceTitle='MEIOS DE ENVIO
-            E FRETES' ServiceSubTitle='Todo o Brasil via Correios (PAC ou Sedex), JadLog  e muito mais'
-          />
-          <FuncionalityCard
-            img={ProdsImg}
-            serviceTitle='GESTÃO DE PRODUTOS' ServiceSubTitle='Estoque atualizado em todos os seus canais online e várias fotos'
-          />
-          <FuncionalityCard
-            img={AmazonServerImg}
-            serviceTitle='HOSPEDAGEM SERVER AMAZON' ServiceSubTitle='Uma plataforma estável, segura e garantia de 99% On'
-          />
-          <FuncionalityCard
-            img={AppMobile}
-            serviceTitle='APLICATIVO
-            MOBILE' ServiceSubTitle='Administre estoque e vendas do celular com Android ou iOS.'
-          />
+          <Bounce cascade damping={0.1}>
+            <FuncionalityCard
+              img={LayoutImg}
+              serviceTitle='LAYOUTS PROFISSIONAIS' ServiceSubTitle='Mais de 40 layouts prontos para sua loja impactar seus clientes'
+              />
+            <FuncionalityCard
+              img={PaymentsImg}
+              serviceTitle='MEIOS DE PAGAMENTOS' ServiceSubTitle='Cielo, PagSeguro, Moip, Mercado Pago, PayPal ou PayU'
+            />
+            <FuncionalityCard
+              img={EnviosImg}
+              serviceTitle='MEIOS DE ENVIO
+              E FRETES' ServiceSubTitle='Todo o Brasil via Correios (PAC ou Sedex), JadLog  e muito mais'
+            />
+            <FuncionalityCard
+              img={ProdsImg}
+              serviceTitle='GESTÃO DE PRODUTOS' ServiceSubTitle='Estoque atualizado em todos os seus canais online e várias fotos'
+            />
+            <FuncionalityCard
+              img={AmazonServerImg}
+              serviceTitle='HOSPEDAGEM SERVER AMAZON' ServiceSubTitle='Uma plataforma estável, segura e garantia de 99% On'
+            />
+            <FuncionalityCard
+              img={AppMobile}
+              serviceTitle='APLICATIVO
+              MOBILE' ServiceSubTitle='Administre estoque e vendas do celular com Android ou iOS.'
+              />
+            </Bounce>
         </div>
       </div>
       <div id='fale-conosco' className='flex flex-col w-full py-10 bg-cyan-500'>
