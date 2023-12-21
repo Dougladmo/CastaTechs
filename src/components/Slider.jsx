@@ -96,7 +96,7 @@ function Slider() {
             onClick={() => goToSlide(slideIndex)}
             className='text-2xl cursor-pointer'
           >
-            <RxDotFilled size={35} key={slideIndex} className={`transition duration-300 ${slideIndex == currentIndex ? 'text-blue-900'  : 'text-black'}`} />
+            <RxDotFilled size={35} key={slideIndex} className={`transition duration-300 ${slideIndex == currentIndex ? 'text-blue-900'  : 'text-white'}`} />
           </div>
         ))}
       </div>

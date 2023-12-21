@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <div className='w-full px-5 py-5 bg-blue-950'>
+        <div className='w-full px-5 py-5 bg-black'>
             <div id='footer-top' className='md:max-w-4xl md:m-auto md:grid md:grid-cols-2 md:'>
                 <div id='navigation' className='mb-5 md:flex md:flex-col md:py-2'>
                     <a href="#"><img className='w-32 m-auto mb-3 md:w-24 md:m-0 md:mb-5' src={CastaFragments} alt="footer logo" /></a>
