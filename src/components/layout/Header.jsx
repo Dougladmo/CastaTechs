@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
+
 import Logo from '../../assets/CastaLogo.webp'
 import styles from './Header.module.css'
+
 import { Link } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Header = () => {
     const [offCanvas, setOffCanvas] = useState(false)
@@ -42,7 +45,9 @@ const Header = () => {
                   <li className='pb-3 mb-3 border-b-2 border-gray-300 lg:pb-0 lg:mb-0 lg:border-none'><Link className='transition duration-500 hover:text-white md:hover:text-blue-500' to='sobre' >A Casta</Link></li>
                   <li className=''><Link className='transition duration-500 hover:text-white md:hover:text-blue-500'  to='contato'>Contato</Link ></li>
               </ul>
-              <FaBars onClick={() => offCanvas ? setOffCanvas(false) : setOffCanvas(true)} className='self-center p-3 mr-4 text-white rounded-lg bg-blue-950 h-14 w-14 lg:hidden'/>
+              <div onClick={() => offCanvas ? setOffCanvas(false) : setOffCanvas(true)} className='flex items-center self-center justify-center p-3 mr-4 text-white rounded-lg bg-blue-950 h-14 w-14 lg:hidden'>
+                { offCanvas ? <IoCloseSharp size={45} /> : <FaBars size={30} />}
+              </div>
           </nav>
       </div>
     </div>

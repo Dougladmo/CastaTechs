@@ -8,7 +8,7 @@ import background3 from '../assets/background3.jpg'
 function Slider() {
   const slides = [
     {
-      title: 'Desenvolvimento Java',
+      title: 'FÁBRICA DE SOFTWARE',
       titleColor: '#3accc3',
       subTitle: 'Potencializando Seu Negócio',
       li: ['Desenvolvimento Java 6 a 21 LTS', 'Spring Framework and Spring Boot', 'Microsservice com SpringBoot', 'Integrações com API REST Full', 'Front end JFS, JSP e Angular (Node.js)', 'APIGEE Edge Gerenciamento de API'],
@@ -82,11 +82,11 @@ function Slider() {
         </ul>
       </div>
       {/* Left Arrow */}
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:ml-5 left-5 text-2xl rounded-sm p-2 hover:bg-gray-300 hover:opacity-100 opacity-50 md:bg-gray-300 md:opacity-100 md:hover:opacity-50 transition duration-300 text-black cursor-pointer'>
+      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:ml-5 left-5 text-2xl rounded-sm p-2 bg-gray-300 opacity-100 hover:opacity-50 transition duration-300 text-black cursor-pointer'>
         <MdOutlineKeyboardArrowLeft onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:mr-5 right-5 text-2xl rounded-sm p-2 hover:bg-gray-300  opacity-50 md:bg-gray-300 md:opacity-100 md:hover:opacity-50 transition duration-300 text-black cursor-pointer'>
+      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] md:mr-5 right-5 text-2xl rounded-sm p-2 bg-gray-300 opacity-100 hover:opacity-50 transition duration-300 text-black cursor-pointer'>
         <MdOutlineKeyboardArrowRight onClick={nextSlide} size={30} />
       </div>
       <div className='flex justify-center py-2 top-4'>
