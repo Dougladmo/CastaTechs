@@ -94,7 +94,7 @@ const Home = () => {
           </div>
         </AttentionSeeker>
       </div>
-      <div id='Serviços' className='flex flex-col gap-5 py-10 bg-black'>
+      <div id='Serviços' className='flex flex-col gap-5 py-10 bg-blue-800'>
         <div className='px-6 lg:max-w-5xl lg:m-auto'>
           <h3 style={{ textShadow: '0px 0px 12px' }} className='mb-10 text-2xl leading-10 text-center text-white uppercase lg:text-4xl lg:leading-relaxed'>uma loja virtual completa, customizável, multi canal de vendas e indicadores de decisão.</h3>
           <StoreAnalytics />
