@@ -29,7 +29,7 @@ const Header = () => {
     <div className={`${ scrolled ? styles.sticky : styles.header }`} >
       <div className='sticky flex items-center w-full h-24'>
           <nav id='header'  className='relative z-30 flex justify-between w-full px-3 lg:justify-center lg:items-center lg:gap-14'>
-              <Link to='/'>
+              <Link  to='/'>
                <img className='self-center w-48' src={Logo} alt="Casta logo" />
               </Link>
               <ul

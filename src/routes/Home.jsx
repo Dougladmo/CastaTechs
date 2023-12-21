@@ -133,30 +133,36 @@ const Home = () => {
         </div>
       </div>
       <div id='fale-conosco' className='flex flex-col w-full py-10 bg-cyan-500'>
-          <Fade triggerOnce cascade damping={0.3}>
-            <div className='flex flex-col items-center justify-center w-full px-5 py-8 text-center text-white bg-cyan-500 gap-7'>
+          <AttentionSeeker triggerOnce effect='pulse' duration={1000} >
+            <div className='flex flex-col items-center justify-center w-full px-5 py-12 pt-0 text-center text-white bg-cyan-500 gap-7'>
               <h3 className='text-5xl font-normal tracking-widest uppercase drop-shadow-lg'>Fale <span className='block pt-5'>conosco</span></h3>
               <p className='text-2xl font-medium drop-shadow-lg lg:text-xl lg:font-normal font'>Temos satisfação em atender!
                 Queremos ouvir sobre sua necessidade e propor a melhor solução.</p>
             </div>
+          </AttentionSeeker>
             <div id='contact-cards' className='lg:flex lg:m-auto lg:w-3/4'>
               <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-2 bg-[#a6c54a]`}>
-                <IoIosPhonePortrait size={55} className='text-white' />
-                <h4 className='text-4xl font-medium drop-shadow-md'>Fones</h4>
-                <p className='mb-2 text-xl text-center drop-shadow-lg'>(11) 96061-5651 <span className='block pt-2'>(11) 96061-5651</span></p>
+                <AttentionSeeker triggerOnce effect='shakeX' duration={1000} >
+                  <IoIosPhonePortrait size={55} className='text-white' />
+                  <h4 className='text-4xl font-medium drop-shadow-md'>Fones</h4>
+                  <p className='mb-2 text-xl text-center drop-shadow-lg'>(11) 96061-5651 <span className='block pt-2'>(11) 96061-5651</span></p>
+                </AttentionSeeker>
               </div>
               <div className={`h-72 px-5 w-full flex flex-col items-center justify-center gap-4 bg-[#f6f6f6]`}>
-                <FaRegPaperPlane size={55} />
-                <h4 className='text-3xl font-medium drop-shadow-md'>Email</h4>
-                <p className='mb-2 text-xl text-center drop-shadow-lg'>contato@castatecnologia.com <span className='block pt-2'>info@castatecnologia.com</span></p>
+                <AttentionSeeker triggerOnce effect='shakeX' duration={1000} >
+                  <FaRegPaperPlane size={55} />
+                  <h4 className='text-3xl font-medium drop-shadow-md'>Email</h4>
+                  <p className='mb-2 text-xl text-center drop-shadow-lg'>contato@castatecnologia.com <span className='block pt-2'>info@castatecnologia.com</span></p>
+                  </AttentionSeeker>
               </div>
               <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-5 bg-[#437da3]`}>
-                <IoLogoSkype size={55} />
-                <h4 className='text-3xl font-medium drop-shadow-md'>Skype</h4>
-                <p className='mb-2 text-xl text-center drop-shadow-lg'>Casta Tecnologia</p>
+                <AttentionSeeker triggerOnce effect='shakeX' duration={1000} >
+                  <IoLogoSkype size={55} />
+                  <h4 className='text-3xl font-medium drop-shadow-md'>Skype</h4>
+                  <p className='mb-2 text-xl text-center drop-shadow-lg'>Casta Tecnologia</p>
+                </AttentionSeeker>
               </div>
             </div>
-          </Fade>
       </div>
     </div>
   )
