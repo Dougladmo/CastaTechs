@@ -79,18 +79,20 @@ const Home = () => {
         </Fade>
         </div>
       <div id='img links' className='my-5 md:flex md:justify-center'>
-        <div className='py-5'>
-          <img className='w-1/2 m-auto transition duration-500 rounded-full md:w-1/2 opacity-60 hover:opacity-100 hover:scale-110' src={Solution} alt="soluções img" />
-          <h3 className='py-5 text-2xl text-center text-blue-400 drop-shadow-md'>Soluções</h3>
-        </div>
-        <div className='py-5'>
-          <img className='w-1/2 m-auto transition duration-500 rounded-full md:w-1/2 opacity-60 hover:opacity-100 hover:scale-110' src={Services} alt="services img" />
-          <h3 className='py-5 text-2xl text-center text-blue-400 drop-shadow-md'>Serviços</h3>
-        </div>
-        <div className='py-5'>
-          <img className='w-1/2 m-auto transition duration-500 rounded-full md:w-1/2 opacity-60 hover:opacity-100 hover:scale-110' src={Sobre} alt="sobre img" />
-          <h3 className='py-5 text-2xl text-center text-blue-400 drop-shadow-md'>Sobre nós</h3>
-        </div>
+        <AttentionSeeker className='flex flex-col gap-6' effect='pulse' duration={1500} cascade damping={0.3}>
+          <div className='py-5'>
+            <img className='w-1/2 m-auto transition duration-500 rounded-full md:w-1/2 opacity-60 hover:opacity-100 hover:scale-110' src={Solution} alt="soluções img" />
+            <h3 className='py-5 text-2xl text-center text-blue-400 drop-shadow-md'>Soluções</h3>
+          </div>
+          <div className='py-5'>
+            <img className='w-1/2 m-auto transition duration-500 rounded-full md:w-1/2 opacity-60 hover:opacity-100 hover:scale-110' src={Services} alt="services img" />
+            <h3 className='py-5 text-2xl text-center text-blue-400 drop-shadow-md'>Serviços</h3>
+          </div>
+          <div className='py-5'>
+            <img className='w-1/2 m-auto transition duration-500 rounded-full md:w-1/2 opacity-60 hover:opacity-100 hover:scale-110' src={Sobre} alt="sobre img" />
+            <h3 className='py-5 text-2xl text-center text-blue-400 drop-shadow-md'>Sobre nós</h3>
+          </div>
+        </AttentionSeeker>
       </div>
       <div id='Serviços' className='flex flex-col gap-5 py-10 bg-blue-800'>
         <div className='px-6 lg:max-w-5xl lg:m-auto'>
@@ -133,7 +135,7 @@ const Home = () => {
         </div>
       </div>
       <div id='fale-conosco' className='flex flex-col w-full py-10 bg-cyan-500'>
-          <AttentionSeeker triggerOnce effect='pulse' duration={1000} >
+          <AttentionSeeker effect='pulse' duration={1000} >
             <div className='flex flex-col items-center justify-center w-full px-5 py-12 pt-0 text-center text-white bg-cyan-500 gap-7'>
               <h3 className='text-5xl font-normal tracking-widest uppercase drop-shadow-lg'>Fale <span className='block pt-5'>conosco</span></h3>
               <p className='text-2xl font-medium drop-shadow-lg lg:text-xl lg:font-normal font'>Temos satisfação em atender!

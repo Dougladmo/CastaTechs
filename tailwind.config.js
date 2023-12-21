@@ -17,7 +17,17 @@ export default {
       top: '-1px -26px 15px -32px  #000',
       none: 'none',
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        'slideLeft': {
+          '0%': { transform: 'translate(-300px)'},
+          '100%': { transform: 'translate(0px)'},
+        }
+      },
+      animation: {
+        offCanvas: 'slideLeft 0.8s',
+      }
+    },
   },
   plugins: [],
 }
