@@ -36,7 +36,7 @@ const Home = () => {
             <Zoom triggerOnce duration={1000}>
               <div id='sua-loja' className='md:h-full'>
                 <img className='w-40 m-auto md:w-44' src={Cart} alt="litle cart store" />
-                <h4 className='max-w-[340px] m-auto text-center text-slate-700 font-semibold drop-shadow-md text-3xl'>CRIE SUA LOJA VIRTUAL</h4>
+                <h3 className='max-w-[340px] m-auto text-center text-slate-700 font-semibold drop-shadow-md text-3xl'>CRIE SUA LOJA VIRTUAL</h3>
                 <div className='shadow-top flex flex-col lg:gap-5 text-slate-700 font-semibold items-center max-w-[340px] m-auto mt-4'>
                   <h4 className='my-2 text-2xl text-center drop-shadow-lg'>E-COMMERCE</h4>
                   <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
@@ -57,7 +57,7 @@ const Home = () => {
             <Zoom triggerOnce duration={1000}>
               <div id='totvs consultoria' className='md:h-full md:mt-0 mt-7'>
                 <img className='w-40 m-auto md:w-60' src={Consul} alt="litle cart store" />
-                <h4 className='max-w-[340px] md:max-w-none m-auto text-center text-slate-700 font-semibold drop-shadow-md text-3xl'>CONSULTORIA ERP TOTVS</h4>
+                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-slate-700 font-semibold drop-shadow-md text-3xl'>CONSULTORIA ERP TOTVS</h3>
                 <div className='shadow-top flex flex-col lg:gap-[19.5px] text-slate-700 font-semibold items-center max-w-[340px] m-auto mt-4'>
                   <h4 className='my-2 text-2xl text-center drop-shadow-lg'>PROTHEUS e RM</h4>
                   <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
