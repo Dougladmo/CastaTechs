@@ -143,7 +143,7 @@ const Home = () => {
             </div>
           </AttentionSeeker>
             <div id='contact-cards' className='lg:flex lg:m-auto lg:w-3/4'>
-              <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-2 bg-[#a6c54a]`}>
+              <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-2 bg-[#8ba638]`}>
                 <AttentionSeeker triggerOnce effect='shakeX' duration={1000} >
                   <IoIosPhonePortrait size={55} className='text-white' />
                 </AttentionSeeker>
@@ -157,7 +157,7 @@ const Home = () => {
                   <h4 className='text-3xl font-medium drop-shadow-md'>Email</h4>
                   <p className='mb-2 text-xl text-center drop-shadow-lg'>contato@castatecnologia.com <span className='block pt-2'>info@castatecnologia.com</span></p>
               </div>
-              <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-5 bg-[#437da3]`}>
+              <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-5 bg-[#386c8f]`}>
                 <AttentionSeeker triggerOnce effect='shakeX' duration={1000} >
                   <IoLogoSkype size={55} />
                 </AttentionSeeker>
