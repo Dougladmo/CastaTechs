@@ -12,11 +12,11 @@ const Footer = () => {
                 <div id='navigation' className='mb-5 md:flex md:flex-col md:py-2'>
                     <a href="#"><img className='w-32 m-auto mb-3 md:w-24 md:m-0 md:mb-5' src={CastaFragments} alt="footer logo" /></a>
                     <ul className='flex flex-col w-full max-w-sm pl-1 text-lg text-white transition duration-300 md:text-sm'>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='/'>Home</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='solucoes'>Soluções</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='servicos'>Serviços</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='sobre'>A casta</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='contato'>Contato</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link  to='/' aria-label='link to homepage' >Home</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='solucoes'  aria-label='link to solutions page' >Soluções</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='servicos'  aria-label='link services page'>Serviços</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='sobre' aria-label='link to about page'>A casta</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link to='contato' aria-label='link to contact page'>Contato</Link></li>
                     </ul>
                 </div>
                 <div id='payments' className='flex flex-col items-end gap-8 pr-2 md:gap-3'>
