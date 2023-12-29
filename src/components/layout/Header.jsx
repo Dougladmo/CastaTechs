@@ -43,7 +43,7 @@ const Header = () => {
                   <li className='pb-3 mb-3 border-b-2 border-gray-300 lg:pb-0 lg:mb-0 lg:border-none'><Link className='transition duration-500 hover:text-white md:hover:text-blue-500' to='solucoes'  aria-label='+ Soluções' >+  Soluções</Link></li>
                   <li className='pb-3 mb-3 border-b-2 border-gray-300 lg:pb-0 lg:mb-0 lg:border-none'><Link className='transition duration-500 hover:text-white md:hover:text-blue-500' to='servicos'  aria-label='Serviços' >Serviços</Link></li>
                   <li className='pb-3 mb-3 border-b-2 border-gray-300 lg:pb-0 lg:mb-0 lg:border-none'><Link className='transition duration-500 hover:text-white md:hover:text-blue-500' to='sobre'  aria-label='A Casta' >A Casta</Link></li>
-                  <li className=''><Link className='transition duration-500 hover:text-white md:hover:text-blue-500'  to='contato' aria-label='link to contact page'>Contato</Link ></li>
+                  <li className=''><Link className='transition duration-500 hover:text-white md:hover:text-blue-500'  to='contato' aria-label='Contato'>Contato</Link ></li>
               </ul>
               <div onClick={() => offCanvas ? setOffCanvas(false) : setOffCanvas(true)} className='flex items-center self-center justify-center p-3 mr-4 text-white rounded-lg bg-blue-950 h-14 w-14 lg:hidden'>
                 { offCanvas ? <IoCloseSharp size={45} /> : <FaBars size={30} />}
