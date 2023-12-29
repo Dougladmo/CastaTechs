@@ -26,11 +26,11 @@ const Home = () => {
     <div id='main' className='w-full bg-gray-100'>
       <Slider />
       <div id='solucoes' className='w-full py-5 m-auto bg-gray-100 md:w-9/12 mt-14'>
-        <h3 className='pb-10 m-auto text-4xl font-bold text-center text-blue-500 drop-shadow-md md:text-5xl md:mx-28'>
+        <h2 className='pb-10 m-auto text-4xl font-bold text-center text-blue-500 drop-shadow-md md:text-5xl md:mx-28'>
             <AttentionSeeker className='flex flex-col gap-6' effect='pulse' cascade damping={0.3}>
               <span className='uppercase md:self-start'>Soluções que</span><span className='uppercase md:self-center'>transformam</span><span className='uppercase md:self-end'>seu negócio</span>
             </AttentionSeeker>
-          </h3>
+          </h2>
         <Fade duration={1500}>
           <div id='sua-loja-wrapper' className='items-baseline lg:grid lg:grid-cols-2 lg:justify-evenly shadow-top md:py-5'>
             <Zoom triggerOnce duration={1000}>
