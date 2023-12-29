@@ -38,7 +38,7 @@ const Header = () => {
               <ul
               className={`${offCanvas ? 'absolute animate-offCanvas' : 'hidden'}  z-30 pt-12 lg:pt-0 px-5 bg-blue-950 lg:bg-transparent left-0 h-screen lg:h-24 lg:flex lg:justify-center lg:items-center lg:gap-24 w-3/5 lg:w-auto text-gray-300 lg:text-blue-900 font-semibold text-xl lg:text-base`}
               >
-                  <li><Link><img className='my-10 rounded-lg w-44 md:hidden' src={Logo} alt="Casta logo  ul"/></Link></li>
+                  <li><Link to='/' ><img className='my-10 rounded-lg w-44 md:hidden' src={Logo} alt="Casta logo  ul"/></Link></li>
                   <li className='pb-3 mb-3 border-b-2 border-gray-300 lg:pb-0 lg:mb-0 lg:border-none'><Link className='transition duration-500 hover:text-white md:hover:text-blue-500' to='/'>Home</Link></li>
                   <li className='pb-3 mb-3 border-b-2 border-gray-300 lg:pb-0 lg:mb-0 lg:border-none'><Link className='transition duration-500 hover:text-white md:hover:text-blue-500' to='solucoes' >+  Soluções</Link></li>
                   <li className='pb-3 mb-3 border-b-2 border-gray-300 lg:pb-0 lg:mb-0 lg:border-none'><Link className='transition duration-500 hover:text-white md:hover:text-blue-500' to='servicos' >Serviços</Link></li>
