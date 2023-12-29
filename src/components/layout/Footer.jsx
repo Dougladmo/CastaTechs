@@ -22,7 +22,7 @@ const Footer = () => {
                 <div id='payments' className='flex flex-col items-end gap-8 pr-2 md:gap-3'>
                     <img src={Logo} alt="casta logo footer" className='rounded-2xl w-60' />
                     <p className='text-lg text-white md:text-sm'>São paulo/SP <span className='block'>e Belém/PA </span></p>
-                    <a className='mb-3 text-lg text-white md:text-sm'>contato@castatecnologia.com </a>
+                    <a href='mailto:contato@castatecnologia.com' className='mb-3 text-lg text-white md:text-sm'>contato@castatecnologia.com </a>
                     <img className='max-w-xs' src={CastaSecurityFlags} alt="Security flags" />
                     <img className='max-w-xs' src={CastaCardFlags} alt="Card flags" />
                 </div>
