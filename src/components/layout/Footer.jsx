@@ -20,11 +20,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div id='payments' className='flex flex-col items-end gap-8 pr-2 md:gap-3'>
-<<<<<<< HEAD
                     <a href="#"><img src={Logo} alt="casta logo footer" className='rounded-2xl w-40' /></a>
-=======
-                    <img src={Logo} alt="casta logo footer" className='rounded-2xl w-60' />
->>>>>>> main
                     <p className='text-lg text-white md:text-sm'>São paulo/SP <span className='block'>e Belém/PA </span></p>
                     <a href='mailto:contato@castatecnologia.com' className='mb-3 text-lg text-white md:text-sm'>contato@castatecnologia.com </a>
                     <img className='max-w-xs' src={CastaSecurityFlags} alt="Security flags" />
