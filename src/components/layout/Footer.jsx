@@ -10,17 +10,17 @@ const Footer = () => {
         <div className='w-full px-5 py-5 bg-black'>
             <div id='footer-top' className='md:max-w-4xl md:m-auto md:grid md:grid-cols-2 md:'>
                 <div id='navigation' className='mb-5 md:flex md:flex-col md:py-2'>
-                    <Link to='main' offset={-100} smooth={true} duration={500}><img className='w-24 m-auto mb-3 md:m-0 md:mb-5 md:w-16 lg:w-14 cursor-pointer' src={CastaFragments} alt="footer logo" /></Link>
+                    <Link to='main' aria-label="casta logo footer" offset={-100} smooth={true} duration={500}><img className='w-24 m-auto mb-3 md:m-0 md:mb-5 md:w-16 lg:w-14 cursor-pointer' src={CastaFragments} alt="footer logo" /></Link>
                     <ul className='flex flex-col w-full max-w-sm pl-1 text-lg text-white transition duration-300 md:text-sm'>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-36'  offset={-100} smooth={true} duration={500} to='main'>Home</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-32' offset={-120} smooth={true} duration={500} to='solucoes' >Soluções</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-32' offset={500} smooth={true} duration={500} to='servicos'>Serviços</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-32' offset={-100} smooth={true} duration={500} to='main'>A casta</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-32' offset={-100} smooth={true} duration={500} to='contato'>Contato</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-36' offset={-100} smooth={true} duration={500} to='main' aria-label="Home">Home</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-32' offset={-120} smooth={true} duration={500} to='solucoes' aria-label="Soluções" >Soluções</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-32' offset={500} smooth={true} duration={500} to='servicos' aria-label="Serviços">Serviços</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-32' offset={-100} smooth={true} duration={500} to='main' aria-label="A casta" >A casta</Link></li>
+                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-32' offset={-100} smooth={true} duration={500} to='contato' aria-label="Contato" >Contato</Link></li>
                     </ul>
                 </div>
                 <div id='payments' className='flex flex-col items-end gap-8 pr-2 md:gap-3'>
-                    <Link to='main' offset={-100} smooth={true} duration={500}><img src={Logo} alt="casta logo footer" className='rounded-2xl w-32 cursor-pointer' /></Link>
+                    <Link to='main' aria-label="casta logo footer" offset={-100} smooth={true} duration={500}><img src={Logo} alt="casta logo footer" className='rounded-2xl w-32 cursor-pointer' /></Link>
                     <p className='text-lg text-white md:text-sm'>São paulo/SP <span className='block'>e Belém/PA </span></p>
                     <a href='mailto:contato@castatecnologia.com' className='mb-3 text-lg text-white md:text-sm'>contato@castatecnologia.com </a>
                     <img className='max-w-xs' src={CastaSecurityFlags} alt="Security flags" />
