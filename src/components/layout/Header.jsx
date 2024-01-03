@@ -33,7 +33,7 @@ const Header = () => {
       <div className='sticky flex items-center w-full h-24'>
           <nav id='header'  className='relative z-30 flex justify-between w-full px-3 lg:justify-center lg:items-center'>
               <Link  to='main' offset={-100} smooth={true} duration={500}>
-               <img className='self-center w-20 cursor-pointer' src={Logo} alt="Casta logo" />
+               <img className='self-center ml-5 w-20 cursor-pointer' src={Logo} alt="Casta logo" />
               </Link>
               <ul
               className={`${offCanvas ? 'absolute animate-offCanvas' : 'hidden'}  z-30 pt-12 lg:pt-0 px-5 bg-black lg:bg-transparent left-0 h-screen lg:h-24 lg:flex lg:justify-center lg:items-center lg:gap-0 w-3/5 lg:w-auto text-gray-300 lg:text-[#01b1af] font-semibold text-xl lg:text-lg lg:font-thin`}
