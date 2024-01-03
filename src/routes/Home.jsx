@@ -27,11 +27,11 @@ const Home = () => {
     <div id='main' className='w-full bg-black'>
       <Slider />
       <div id='solucoes' className='w-full py-5 md:w-9/12 m-auto mt-14'>
-        <h3 className='pb-10 m-auto text-4xl font-bold text-center text-blue-500 drop-shadow-md md:text-5xl md:mx-28'>
+        <h2 className='pb-10 m-auto text-4xl font-bold text-center text-blue-500 drop-shadow-md md:text-5xl md:mx-28'>
           <AttentionSeeker className='flex flex-col gap-6' effect='pulse' cascade damping={0.3}>
             <span className='uppercase md:self-start'>Soluções que</span><span className='uppercase md:self-center'>transformam</span><span className='uppercase md:self-end'>seu negócio</span>
           </AttentionSeeker>
-        </h3>
+        </h2>
         <Fade duration={1500}>
           <div id='sua-loja-wrapper' className='lg:items-baseline lg:grid lg:grid-cols-2 lg:justify-evenly py-10'>
             <Zoom triggerOnce duration={1000}>
@@ -40,9 +40,9 @@ const Home = () => {
                 url(${gifBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
               }} className='md:h-full md:w-9/12 md:rounded-xl md:py-10 md:m-auto shadow-inner py-10'>
                 <img className='w-40 m-auto md:w-32 bg-white rounded-xl mb-5' src={Cart} alt="litle cart store" />
-                <h4 className='max-w-[340px] m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>CRIE SUA LOJA VIRTUAL</h4>
+                <h3 className='max-w-[340px] m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>CRIE SUA LOJA VIRTUAL</h3>
                 <div className='shadow-top flex flex-col lg:gap-5 text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
-                  <h4 className='my-2 text-2xl text-center drop-shadow-lg'>E-COMMERCE</h4>
+                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>E-COMMERCE</h3>
                   <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
                     <li>Sua Loja Aberta 24hrs por dia</li>
                     <li>Publique seus produtos com fotos e destaques</li>
@@ -65,9 +65,9 @@ const Home = () => {
               className='md:h-full md:w-9/12 md:rounded-xl md:py-10 md:m-auto shadow-inner py-10 mt-5'
               >
                 <img className='w-40 m-auto md:w-60 bg-white rounded-xl mb-5' src={Consul} alt="litle cart store" />
-                <h4 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>CONSULTORIA ERP TOTVS</h4>
+                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>CONSULTORIA ERP TOTVS</h3>
                 <div className='shadow-top flex flex-col lg:gap-[19.5px] text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
-                  <h4 className='my-2 text-2xl text-center drop-shadow-lg'>PROTHEUS e RM</h4>
+                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>PROTHEUS e RM</h3>
                   <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
                     <li>Implantação de sistemas ERP TOTVS</li>
                     <li>Desenvolvimento AdvPL Protheus</li>
