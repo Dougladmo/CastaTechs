@@ -65,7 +65,7 @@ function Slider() {
   }, [])
 
   return (
-    <div className='h-[550px] bg-blue-900 w-full m-auto relative group'> 
+    <div className='h-[550px] bg-[#01b1af] w-full m-auto relative group'> 
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='flex flex-col items-center justify-between h-full px-5 py-10 m-auto duration-500 bg-center bg-cover md:w-11/12 md:flex md:flex-row md:justify-around'
