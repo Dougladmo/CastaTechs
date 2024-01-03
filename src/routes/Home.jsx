@@ -102,7 +102,7 @@ const Home = () => {
           </div>
         </AttentionSeeker>
       </div>
-      <div id='Serviços' className='flex flex-col gap-5 py-10 bg-blue-800'>
+      <div id='servicos' className='flex flex-col gap-5 py-10 bg-blue-800'>
         <div className='px-6 lg:max-w-5xl lg:m-auto'>
           <h3 style={{ textShadow: '0px 0px 12px' }} className='mb-10 text-2xl leading-10 text-center text-white uppercase lg:text-4xl lg:leading-relaxed'>uma loja virtual completa, customizável, multi canal de vendas e indicadores de decisão.</h3>
           <StoreAnalytics />
@@ -142,7 +142,7 @@ const Home = () => {
           </Bounce>
         </div>
       </div>
-      <div id='fale-conosco' className='flex flex-col w-full py-10 bg-[#01b1af]'>
+      <div id='contato' className='flex flex-col w-full py-10 bg-[#01b1af]'>
         <AttentionSeeker effect='pulse' duration={1000} >
           <div className='flex flex-col items-center justify-center w-full px-5 py-12 pt-0 text-center bg-[#01b1af] text-white bg-transparent gap-7'>
             <h3 className='text-5xl font-normal tracking-widest uppercase drop-shadow-lg'>Fale <span className='block pt-5'>conosco</span></h3>
