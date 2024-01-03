@@ -68,7 +68,7 @@ function Slider() {
     <div className='h-[550px] bg-[#01b1af] w-full m-auto relative group'> 
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='flex flex-col items-center justify-between h-full px-5 py-10 m-auto duration-500 bg-center bg-cover md:w-11/12 md:flex md:flex-row md:justify-around'
+        className='flex flex-col items-center justify-between h-full px-5 py-10 m-auto duration-500 bg-center bg-cover md:w-full md:flex md:flex-row md:justify-around'
       >
         <div id='call-to-action' className='flex flex-col items-center self-start '>
           <h1 style={{color: `${slides[currentIndex].titleColor}`}} className={`drop-shadow-lg shadow-gray-500 text-left leading-normal text-4xl lg:text-6xl pt-8 font-bold uppercase ${currentIndex == 0 ? 'break-all' : ''}`}>{slides[currentIndex].title} <span className='block text-lg font-normal text-white'>{slides[currentIndex].subTitle? `${slides[currentIndex].subTitle}` : ''}</span></h1>
@@ -95,7 +95,7 @@ function Slider() {
             onClick={() => goToSlide(slideIndex)}
             className='text-2xl cursor-pointer'
           >
-            <RxDotFilled size={35} key={slideIndex} className={`transition duration-300 ${slideIndex == currentIndex ? 'text-blue-900'  : 'text-white'}`} />
+            <RxDotFilled size={35} key={slideIndex} className={`transition duration-300 ${slideIndex == currentIndex ? 'text-[#01b1af]'  : 'text-white'}`} />
           </div>
         ))}
       </div>
