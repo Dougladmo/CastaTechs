@@ -19,7 +19,7 @@ function Slider() {
     {
       title: 'Loja Virtual Crie a sua',
       titleColor: '#f2bf5e',
-      liTitle: 'Planos a partir de R$ 29/mês. Teste 15 dias grátis.',
+      subTitle: 'Planos a partir de R$ 29/mês. Teste 15 dias grátis.',
       li: ['Publique seus produtos com fotos e vídeos', 'Atraia novos clientes, gere leads', 'O cliente acompanha todo o pedido', 'Produtos em Destaques e Ofertas.'],
       url: background2,
       buttonColor1: '#ffc556',
@@ -75,7 +75,6 @@ function Slider() {
           <button style={{backgroundImage: `linear-gradient(${slides[currentIndex].buttonColor1}, ${slides[currentIndex].buttonColor2})`}} className={`uppercase text-white text-xl m-auto w-40 md:w-56 h-14 mt-10 md:ml-10 md:h-16 rounded-full hover:brightness-125 transition duration-500`} >Saiba mais</button>
         </div>
         <ul className='flex flex-col list-disc md:self-end md:mb-10'>
-            <h2 className='max-w-xs text-2xl text-left text-white lg:text-3xl md:pb-5 md:max-w-lg' >{slides[currentIndex].liTitle? `${slides[currentIndex].liTitle}` : ''}</h2>
             {slides[currentIndex].li?.map((item) => {
               return <li key={item} className='ml-8 text-lg text-white lg:text-xl md:ml-16'>{item}</li>
             })}
