@@ -45,7 +45,7 @@ const Header = () => {
                   <li className='pb-3 pl-3 mb-3 border-b-2 border-gray-300'><Link onClick={() => setOffCanvas(false)} className='transition duration-500 cursor-pointer hover:text-white md:hover:text-blue-500' to='main' offset={-100} smooth={true} duration={500} >A Casta</Link></li>
                   <li className='pb-3 pl-3 mb-3 border-b-2 border-gray-300'><Link onClick={() => setOffCanvas(false)} className='transition duration-500 cursor-pointer hover:text-white md:hover:text-blue-500' to='contato' offset={-100} smooth={true} duration={500}>Contato</Link ></li>
               </ul>
-              <div onClick={() => offCanvas ? setOffCanvas(false) : setOffCanvas(true)} className='flex items-center self-center justify-center p-3 mr-4 text-white transition duration-500 bg-transparent border-2 border-white hover:text-black hover:bg-white rounded-2xl h-14 w-14'>
+              <div onClick={() => offCanvas ? setOffCanvas(false) : setOffCanvas(true)} className='flex items-center self-center justify-center p-3 mr-4 text-white transition duration-500 bg-transparent border-2 border-white cursor-pointer hover:text-black hover:bg-white rounded-2xl h-14 w-14'>
                 { offCanvas ? <IoCloseSharp size={25} /> : <FaBars size={25} />}
               </div>
           </nav>
