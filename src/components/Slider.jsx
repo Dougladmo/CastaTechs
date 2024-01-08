@@ -19,7 +19,7 @@ function Slider() {
     {
       title: 'Loja Virtual Crie a sua',
       titleColor: '#f2bf5e',
-      subTitle: 'Planos a partir de R$ 29/mês. Teste 15 dias grátis.',
+      subTitle: 'Planos a partir de R$ 99,00/mês. Teste 15 dias grátis.',
       li: ['Publique seus produtos com fotos e vídeos', 'Atraia novos clientes, gere leads', 'O cliente acompanha todo o pedido', 'Produtos em Destaques e Ofertas.'],
       url: background2,
       buttonColor1: '#ffc556',
