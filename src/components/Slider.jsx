@@ -4,6 +4,7 @@ import { RxDotFilled } from 'react-icons/rx';
 import background1 from '../assets/background1.jpg'
 import background2 from '../assets/background2.jpg'
 import background3 from '../assets/background3.jpg'
+import backgroudMobile from '../assets/backgroundMobileBank.jpeg'
 
 function Slider() {
   const slides = [
@@ -13,6 +14,7 @@ function Slider() {
       subTitle: 'Potencializando Seu Negócio',
       li: ['Desenvolvimento Java 6 a 21 LTS', 'Spring Framework and Spring Boot', 'Microsservice com SpringBoot', 'Integrações com API REST Full', 'Front end JFS, JSP e Angular (Node.js)', 'APIGEE Edge Gerenciamento de API'],
       url: background1,
+      MobileUrl: background1,
       buttonColor1: '#8da157',
       buttonColor2: '#5a7512',
     },
@@ -22,15 +24,17 @@ function Slider() {
       subTitle: 'Planos a partir de R$ 29/mês. Teste 15 dias grátis.',
       li: ['Publique seus produtos com fotos e vídeos', 'Atraia novos clientes, gere leads', 'O cliente acompanha todo o pedido', 'Produtos em Destaques e Ofertas.'],
       url: background2,
+      MobileUrl: background2,
       buttonColor1: '#ffc556',
       buttonColor2: '#f3a613',
     },
     {
-      title: 'ADVPL Protheus',
-      subTitle: 'Desenvolvimento AdvPL  e Customizações',
+      title: 'SERVIÇOS BANCÁRIOS',
+      subTitle: 'Agarre a transformação. Melhore experiência do cliente.',
       titleColor: '#3accc3',
-      li: ['Flexibilidade no ERP', 'Personalização de Processos', 'Desenvolvimento de Rotinas, Pontos de entradas', 'O Sistema cresce junto com a empresa.'],
+      li: ['Serviços financeiros com especialistas', 'Open Bank e Open Finance', 'Lei geral de proteção de dados - LGPD', 'Migração e sustentação do legado'],
       url: background3,
+      MobileUrl: backgroudMobile,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',
     },
@@ -66,17 +70,19 @@ function Slider() {
 
   return (
     <div className='h-[550px] bg-[#01b1af] w-full m-auto relative group'> 
+    {/* Slider content */}
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='flex flex-col items-center justify-between h-full px-5 py-10 m-auto duration-500 bg-center bg-cover md:w-full md:flex md:flex-row md:justify-around'
+          style={{
+          backgroundImage: `url(${screen.width <= 600 ? slides[currentIndex].MobileUrl : slides[currentIndex].url})`, backgroundPosition: 'center'}}
+        className='flex flex-col items-center justify-between h-full px-3 py-10 m-auto duration-500 bg-center bg-cover md:px-16 md:w-full md:flex md:flex-row md:justify-around'
       >
         <div id='call-to-action' className='flex flex-col items-center self-start '>
-          <h1 style={{color: `${slides[currentIndex].titleColor}`}} className={`drop-shadow-lg shadow-gray-500 text-left leading-normal text-4xl lg:text-6xl pt-8 font-bold uppercase ${currentIndex == 0 ? 'break-all' : ''}`}>{slides[currentIndex].title} <span className='block text-lg font-normal text-white'>{slides[currentIndex].subTitle? `${slides[currentIndex].subTitle}` : ''}</span></h1>
+          <h1 style={{color: `${slides[currentIndex].titleColor}`}} className={`drop-shadow-lg shadow-gray-500 text-left leading-normal text-4xl lg:text-6xl pt-8 font-bold uppercase break-all`}>{slides[currentIndex].title} <span className='block text-lg font-normal text-white'>{slides[currentIndex].subTitle? `${slides[currentIndex].subTitle}` : ''}</span></h1>
           <button style={{backgroundImage: `linear-gradient(${slides[currentIndex].buttonColor1}, ${slides[currentIndex].buttonColor2})`}} className={`uppercase text-white text-xl m-auto w-40 md:w-56 h-14 mt-10 md:ml-10 md:h-16 rounded-full hover:brightness-125 transition duration-500`} >Saiba mais</button>
         </div>
         <ul className='flex flex-col list-disc md:self-end md:mb-10'>
-            {slides[currentIndex].li?.map((item) => {
-              return <li key={item} className='ml-8 text-lg text-white lg:text-xl md:ml-16'>{item}</li>
+            {slides[currentIndex].li?.map((item, index) => {
+              return <li key={index} className={`ml-8 text-lg lg:text-xl md:ml-16 text-white`}>{item}</li> 
             })}
         </ul>
       </div>
