@@ -45,7 +45,7 @@ function Slider() {
       titleColor: '#3accc3',
       li: ['Gestão Financeira-DRE', 'Gestão de Vendas', 'Gestão de Estoques por grade', 'PDV', 'Integração contábil', 'Conta bancária integrada', 'E-commerce'],
       url: background4,
-      MobileUrl: backgroudMobile,
+      MobileUrl: background4,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',
     },
