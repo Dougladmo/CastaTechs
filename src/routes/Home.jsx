@@ -48,6 +48,7 @@ const Home = () => {
                     <li>Publique seus produtos com destaques</li>
                     <li>Meios de Pagamentos seguros</li>
                     <li>Checkout transparente</li>
+                    <li>Infraestrutura em nuvem Amazon AWS</li>
                     <li>Integração com Facebook e Instagram</li>
                     <li>Integração com os maiores Markeplaces</li>
                     <li>SEO: Otimização e melhores práticas </li>
