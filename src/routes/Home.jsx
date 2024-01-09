@@ -44,42 +44,43 @@ const Home = () => {
                 <div className='shadow-top flex flex-col lg:gap-5 text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
                   <h3 className='my-2 text-2xl text-center drop-shadow-lg'>E-COMMERCE</h3>
                   <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
-                    <li>Sua Loja Aberta 24hrs por dia</li>
-                    <li>Publique seus produtos com fotos e destaques</li>
-                    <li>Vários Meios de Pagamento Seguro</li>
-                    <li>Checkout Transparente</li>
+                    <li>Sua Loja Aberta 24hrs/dia</li>
+                    <li>Publique seus produtos com destaques</li>
+                    <li>Meios de Pagamentos seguros</li>
+                    <li>Checkout transparente</li>
                     <li>Integração com Facebook e Instagram</li>
-                    <li>Sincronizado com Mercado Livre</li>
-                    <li>SEO: Otimização melhores práticas </li>
-                    <li>Plataforma responsiva: smart, ipad, note, desktop</li>
+                    <li>Integração com os maiores Markeplaces</li>
+                    <li>SEO: Otimização e melhores práticas </li>
+                    <li>Plataforma responsiva: smartphone, ipad, note, desktop</li>
                     <li>E tem mais veja...</li>
                   </ul>
-                  <a className='w-56 py-5 m-auto mt-6 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Agenda Uma Visita</a>
+                  <a className='w-56 py-5 m-auto mt-6 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Orçamento</a>
                 </div>
               </div>
             </Zoom>
             <Zoom triggerOnce duration={1000}>
-              <div id='totvs-consultoria'
+              <div id='fabrica-software'
               style={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${gifBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} 
               className='md:h-full md:w-9/12 md:rounded-xl md:py-10 md:m-auto shadow-inner py-10 mt-5'
               >
                 <img className='w-40 m-auto md:w-60 bg-white rounded-xl mb-5' src={Consul} alt="litle cart store" />
-                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>CONSULTORIA ERP TOTVS</h3>
+                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>FÁBRICA DE SOFTWARE</h3>
                 <div className='shadow-top flex flex-col lg:gap-[19.5px] text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
-                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>PROTHEUS e RM</h3>
+                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>WEB e MOBILE</h3>
                   <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
-                    <li>Implantação de sistemas ERP TOTVS</li>
-                    <li>Desenvolvimento AdvPL Protheus</li>
-                    <li>Melhorias na Folha de Pagamento</li>
-                    <li>Consultoria Independente</li>
-                    <li>Redução de custos pra sua empresa</li>
-                    <li>Experiencia no que faz Disseminação da cultura </li>
-                    <li>Consultoria Entregas Legais </li>
+                    <li>Desenvolvimento Web | Mobile</li>
+                    <li>Back-end | Front-end</li>
+                    <li>API´s RESTful | Microservices</li>
+                    <li>Consultoria Especializada Java</li>
+                    <li>Ecossistema Spring Framework</li>
+                    <li>Processo Ágil LeapFrog</li>
+                    <li>Migração | Sustentação legado</li>
                     <li>Integrações de sistemas</li>
-                    <li>Estamos a disposição...</li>
+                    <li>Elevando o nível de maturidade</li>
+                    <li>E tem mais veja...</li>
                   </ul>
-                  <a className='w-56 py-5 m-auto mt-5 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Agenda Uma Visita</a>
+                  <a className='w-56 py-5 m-auto mt-5 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Orçamento</a>
                 </div>
               </div>
             </Zoom>
@@ -145,8 +146,8 @@ const Home = () => {
       <div id='contato' className='flex flex-col w-full py-10 bg-[#01b1af]'>
         <AttentionSeeker effect='pulse' duration={1000} >
           <div className='flex flex-col items-center justify-center w-full px-5 py-12 pt-0 text-center bg-[#01b1af] text-white bg-transparent gap-7'>
-            <h3 className='text-5xl font-normal tracking-widest uppercase drop-shadow-lg'>Fale <span className='block pt-5'>conosco</span></h3>
-            <p className='text-2xl font-medium drop-shadow-lg lg:text-xl lg:font-normal font'>Temos satisfação em atender!
+            <h3 className='text-5xl font-normal tracking-widest uppercase drop-shadow-lg'>Fale Conosco<span className='block pt-5'>-----------------</span></h3>
+            <p className='text-2xl font-medium drop-shadow-lg lg:text-xl lg:font-normal font'>
               Queremos ouvir sobre sua necessidade e propor a melhor solução.</p>
           </div>
         </AttentionSeeker>
@@ -169,7 +170,7 @@ const Home = () => {
             <AttentionSeeker triggerOnce effect='shakeX' duration={1000} >
               <IoLogoSkype size={55} />
             </AttentionSeeker>
-            <h4 className='text-3xl font-medium drop-shadow-md'>Skype</h4>
+            <h4 className='text-3xl font-medium drop-shadow-md'>Meet | Teams</h4>
             <p className='mb-2 text-xl text-center drop-shadow-lg'>Casta Tecnologia</p>
           </div>
         </div>

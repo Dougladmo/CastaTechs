@@ -4,6 +4,7 @@ import { RxDotFilled } from 'react-icons/rx';
 import background1 from '../assets/background1.jpg'
 import background2 from '../assets/background2.jpg'
 import background3 from '../assets/background3.jpg'
+import background4 from '../assets/background4.jpg'
 import backgroudMobile from '../assets/backgroundMobileBank.jpeg'
 
 function Slider() {
@@ -30,10 +31,20 @@ function Slider() {
     },
     {
       title: 'SERVIÇOS BANCÁRIOS',
-      subTitle: 'Agarre a transformação. Melhore experiência do cliente.',
+      subTitle: 'Agarre a transformação. Eleve a experiência do cliente.',
       titleColor: '#3accc3',
       li: ['Serviços financeiros com especialistas', 'Open Bank e Open Finance', 'Lei geral de proteção de dados - LGPD', 'Migração e sustentação do legado'],
       url: background3,
+      MobileUrl: backgroudMobile,
+      buttonColor1: '#65a2af',
+      buttonColor2: '#398493',
+    },
+    {
+      title: 'ERP FULL',
+      subTitle: 'Emissão de notas fiscais: NF-e, NFS-e, NFC-e, CT-e, MDF-e, FNP-e',
+      titleColor: '#3accc3',
+      li: ['Gestão Financeira-DRE', 'Gestão de Vendas', 'Gestão de Estoques por grade', 'PDV', 'Integração contábil', 'Conta bancária integrada', 'E-commerce'],
+      url: background4,
       MobileUrl: backgroudMobile,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',

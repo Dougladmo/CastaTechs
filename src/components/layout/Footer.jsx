@@ -12,11 +12,11 @@ const Footer = () => {
                 <div id='navigation' className='mb-5 md:flex md:flex-col md:py-2'>
                     <Link to='main' offset={-100} smooth={true} duration={500}><img className='w-24 m-auto mb-3 cursor-pointer md:m-0 md:mb-5 md:w-16 lg:w-14' src={CastaFragments} alt="footer logo" /></Link>
                     <ul className='flex flex-col w-full max-w-sm pl-1 text-lg text-white transition duration-300 md:text-sm'>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-36'  offset={-100} smooth={true} duration={500} to='main'>Home</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='pr-32 cursor-pointer' offset={-120} smooth={true} duration={500} to='solucoes' >Soluções</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='pr-32 cursor-pointer' offset={500} smooth={true} duration={500} to='servicos'>Serviços</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='pr-32 cursor-pointer' offset={-100} smooth={true} duration={500} to='main'>A casta</Link></li>
-                        <li className='py-5 pl-2 transition duration-300 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='pr-32 cursor-pointer' offset={-100} smooth={true} duration={500} to='contato'>Contato</Link></li>
+                        <li className='py-5 pl-2 transition duration-500 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='cursor-pointer pr-36'  offset={-100} smooth={true} duration={500} to='main'>Home</Link></li>
+                        <li className='py-5 pl-2 transition duration-500 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='pr-32 cursor-pointer' offset={-120} smooth={true} duration={500} to='solucoes' >Soluções</Link></li>
+                        <li className='py-5 pl-2 transition duration-500 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='pr-32 cursor-pointer' offset={500} smooth={true} duration={500} to='servicos'>Serviços</Link></li>
+                        <li className='py-5 pl-2 transition duration-500 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='pr-24 cursor-pointer' offset={-100} smooth={true} duration={500} to='main'>Quem Somos</Link></li>
+                        <li className='py-5 pl-2 transition duration-500 rounded-md hover:bg-blue-600 md:py-3 md:w-1/2'><Link className='pr-32 cursor-pointer' offset={-100} smooth={true} duration={500} to='contato'>Contato</Link></li>
                     </ul>
                 </div>
                 <div id='payments' className='flex flex-col items-end gap-8 pr-2 md:gap-3'>
