@@ -5,7 +5,7 @@ import background1 from '../assets/background1.jpg'
 import background2 from '../assets/background2.jpg'
 import background3 from '../assets/background3.jpg'
 import background4 from '../assets/background4.jpg'
-import backgroudMobile from '../assets/backgroundMobileBank.jpeg'
+import backgroud3Mobile from '../assets/backgroundMobileBank.jpeg'
 
 function Slider() {
   const slides = [
@@ -35,7 +35,7 @@ function Slider() {
       titleColor: '#3accc3',
       li: ['Serviços financeiros com especialistas', 'Open Bank e Open Finance', 'Lei geral de proteção de dados - LGPD', 'Migração e sustentação do legado'],
       url: background3,
-      MobileUrl: backgroudMobile,
+      MobileUrl: backgroud3Mobile,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',
     },
