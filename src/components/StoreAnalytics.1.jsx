@@ -12,8 +12,8 @@ export const StoreAnalytics = () => {
                 </Slide>
                 <img className='w-full py-5 rounded-xl md:w-2/3 md:m-auto' src={AnaliseImg} alt="imagens de grafico" />
                 <Slide triggerOnce className='self-end' direction='right'>
-                    <p className='pt-3 text-base text-right text-white lg:pb-8 lg:pl-5'>Integração com o Google Analytics
-                    Mais métricas para seguir crescendo
+                    <p className='pt-3 text-base text-right text-white lg:pb-8 lg:pl-5'>Integração com o Google Analytics.
+                    Mais métricas para seguir crescendo.
                     Realize a segmentação das suas campanhas
                     </p>
                 </Slide>

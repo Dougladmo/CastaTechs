@@ -29,7 +29,7 @@ const Home = () => {
       <div id='solucoes' className='w-full py-5 md:w-9/12 m-auto mt-14'>
         <h2 className='pb-10 m-auto text-4xl font-bold text-center text-[#01b1af] drop-shadow-md md:text-5xl md:mx-28'>
           <AttentionSeeker className='flex flex-col gap-6' effect='pulse' cascade damping={0.3}>
-            <span className='uppercase md:self-start'>Soluções que</span><span className='uppercase md:self-center'>transformam</span><span className='uppercase md:self-end'>seu negócio</span>
+            <span className='uppercase md:self-start'>Soluções QUE transformam</span><span className='uppercase md:self-center'></span><span className='uppercase md:self-end'>seu negócio</span>
           </AttentionSeeker>
         </h2>
         <Fade duration={1500}>
@@ -40,9 +40,9 @@ const Home = () => {
                 url(${gifBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
               }} className='md:h-full md:w-9/12 md:rounded-xl md:py-10 md:m-auto shadow-inner py-10'>
                 <img className='w-40 m-auto md:w-32 bg-white rounded-xl mb-5' src={Cart} alt="litle cart store" />
-                <h3 className='max-w-[340px] m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>CRIE SUA LOJA VIRTUAL</h3>
+                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>PLATAFORMA E-COMMERCE</h3>
                 <div className='shadow-top flex flex-col lg:gap-5 text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
-                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>E-COMMERCE</h3>
+                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>CRIE SUA LOJA VIRTUAL</h3>
                   <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
                     <li>Sua Loja Aberta 24hrs/dia</li>
                     <li>Publique seus produtos com destaques</li>
@@ -109,39 +109,38 @@ const Home = () => {
           <h3 style={{ textShadow: '0px 0px 12px' }} className='mb-10 text-2xl leading-10 text-center text-white uppercase lg:text-4xl lg:leading-relaxed'>uma loja virtual completa, customizável, multi canal de vendas e indicadores de decisão.</h3>
           <StoreAnalytics />
           <h3 style={{ textShadow: '0px 0px 12px' }} className='my-5 text-3xl leading-10 text-center text-white uppercase'>PLANOS COM MELHOR CUSTO & BENEFÍCIO</h3>
-          <p className='text-lg font-medium text-center text-white'>Todas as ferramentas para gerenciar o seu negócio online
-            Fique por dentro do desempenho do seu negócio com métricas</p>
+          <p className='text-lg font-medium text-center text-white'>Todas as ferramentas para gerenciar o seu negócio online.</p>
+          <p className='text-lg font-medium text-center text-white'>Fique por dentro do desempenho do seu negócio com métricas</p>
           <h3 className='mt-5 text-3xl leading-10 text-center text-white'>Conheça todas as nossas funcionalidades</h3>
         </div>
         <div id='services-cards' className='w-full lg:max-w-5xl lg:m-auto lg:gap-8 lg:grid lg:grid-cols-3'>
           <Bounce triggerOnce cascade damping={0.2}>
             <FuncionalityCard
               img={LayoutImg}
-              serviceTitle='LAYOUTS PROFISSIONAIS' ServiceSubTitle='Mais de 40 layouts prontos para sua loja impactar seus clientes'
+              serviceTitle='LAYOUTS PROFISSIONAIS' ServiceSubTitle='Mais de 40 templates prontos e customizavéis para sua loja impactar seus clientes e suas vendas.'
             />
             <FuncionalityCard
               img={PaymentsImg}
-              serviceTitle='MEIOS DE PAGAMENTOS' ServiceSubTitle='Cielo, PagSeguro, Moip, Mercado Pago, PayPal ou PayU'
+              serviceTitle='MEIOS DE PAGAMENTOS' ServiceSubTitle='Monetize, Pagar.me, Cielo, PagBank, Moip, Mercado Pago, PayPal, PayU, Getnet, Itaú, BB e muitos outros.'
             />
             <FuncionalityCard
               img={EnviosImg}
               serviceTitle='MEIOS DE ENVIO
-              E FRETES' ServiceSubTitle='Todo o Brasil via Correios (PAC ou Sedex), JadLog  e muito mais'
+              E FRETES' ServiceSubTitle='Todo o Brasil via Correios (PAC ou Sedex), JadLog, Melhor Envio, Jamef. Azul Cargo Express  e muito mais.'
             />
             <FuncionalityCard
               img={ProdsImg}
-              serviceTitle='GESTÃO DE PRODUTOS' ServiceSubTitle='Estoque atualizado em todos os seus canais online e várias fotos'
+              serviceTitle='GESTÃO DE PRODUTOS' ServiceSubTitle='Estoque atualizado em todos os seus canais online, várias fotos/videos, Agendamento de Promoções, Contagem Regressiva e muito mais.'
             />
             <FuncionalityCard
               img={AmazonServerImg}
-              serviceTitle='HOSPEDAGEM SERVER AMAZON' ServiceSubTitle='Uma plataforma estável, segura e garantia de 99% On'
+              serviceTitle='HOSPEDAGEM AMAZON-AWS' ServiceSubTitle='Uma plataforma estável, segurança a nível militar e garantia de 99% disponibilidade e One Page Checkout -sem sair do ambiente da loja.'
             />
             <FuncionalityCard
               img={AppMobile}
-              serviceTitle='APLICATIVO
-              MOBILE' ServiceSubTitle='Administre estoque e vendas do celular com Android ou iOS.'
+              serviceTitle='MOBILE FRIENDLY' ServiceSubTitle='Painel Administrativo e Loja: Acesso a estoque e vendas em qualquer dispositivo, totalmente adaptado para todos os templates.'
             />
-          </Bounce>
+          </Bounce>          
         </div>
       </div>
       <div id='contato' className='flex flex-col w-full py-10 bg-[#01b1af]'>
