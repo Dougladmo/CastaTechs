@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
                 <div id='payments' className='flex flex-col items-end gap-8 pr-2 md:gap-3'>
                     <Link to='main' offset={-100} smooth={true} duration={500}><img src={Logo} alt="casta logo footer" className='w-32 cursor-pointer rounded-2xl' /></Link>
-                    <p className='text-lg text-white md:text-sm'>São paulo/SP <span className='block'>e Belém/PA </span></p>
+                    <p className='text-lg text-white md:text-sm'>São Paulo/SP <span className='block'>e Belém/PA </span></p>
                     <a href='mailto:contato@castatecnologia.com' className='mb-3 text-lg text-white md:text-sm'>contato@castatecnologia.com </a>
                     <img className='max-w-xs' src={CastaSecurityFlags} alt="Security flags" />
                     <img className='max-w-xs' src={CastaCardFlags} alt="Card flags" />

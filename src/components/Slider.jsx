@@ -20,9 +20,9 @@ function Slider() {
       buttonColor2: '#5a7512',
     },
     {
-      title: 'Loja Virtual Crie a sua',
+      title: 'PLATAFORMA E-COMMERCE',
       titleColor: '#f2bf5e',
-      subTitle: 'Planos a partir de R$ 99,00/mês. Teste 15 dias grátis.',
+      subTitle: 'Sua loja Virtual a partir de R$ 99,00/mês.',
       li: ['Publique seus produtos com fotos e vídeos', 'Atraia novos clientes, gere leads', 'O cliente acompanha todo o pedido', 'Produtos em Destaques e Ofertas.'],
       url: background2,
       MobileUrl: background2,
