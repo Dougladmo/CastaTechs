@@ -40,7 +40,7 @@ function Slider() {
       MobileUrl: backgroud3Mobile,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',
-      buttonUrl: '#',
+      buttonUrl: 'https://castatech.sualojaonline.com.br/',
     },
     {
       title: 'ERP FULL',
