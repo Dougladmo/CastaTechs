@@ -18,6 +18,7 @@ function Slider() {
       MobileUrl: background1,
       buttonColor1: '#8da157',
       buttonColor2: '#5a7512',
+      buttonUrl: '#',
     },
     {
       title: 'PLATAFORMA E-COMMERCE',
@@ -28,6 +29,7 @@ function Slider() {
       MobileUrl: background2,
       buttonColor1: '#ffc556',
       buttonColor2: '#f3a613',
+      buttonUrl: '#',
     },
     {
       title: 'SERVIÇOS BANCÁRIOS',
@@ -38,6 +40,7 @@ function Slider() {
       MobileUrl: backgroud3Mobile,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',
+      buttonUrl: '#',
     },
     {
       title: 'ERP FULL',
@@ -48,6 +51,7 @@ function Slider() {
       MobileUrl: background4,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',
+      buttonUrl: '#',
     },
   ];
 
@@ -89,7 +93,7 @@ function Slider() {
       >
         <div id='call-to-action' className='flex flex-col items-center self-start '>
           <h1 style={{color: `${slides[currentIndex].titleColor}`}} className={`drop-shadow-lg shadow-gray-500 text-left leading-normal text-4xl lg:text-6xl pt-8 font-bold uppercase break-all`}>{slides[currentIndex].title} <span className='block text-lg font-normal text-white'>{slides[currentIndex].subTitle? `${slides[currentIndex].subTitle}` : ''}</span></h1>
-          <button style={{backgroundImage: `linear-gradient(${slides[currentIndex].buttonColor1}, ${slides[currentIndex].buttonColor2})`}} className={`uppercase text-white text-xl m-auto w-40 md:w-56 h-14 mt-10 md:ml-10 md:h-16 rounded-full hover:brightness-125 transition duration-500`} >Saiba mais</button>
+          <button style={{backgroundImage: `linear-gradient(${slides[currentIndex].buttonColor1}, ${slides[currentIndex].buttonColor2})`}} className={`uppercase text-white text-xl m-auto w-40 md:w-56 h-14 mt-10 md:ml-10 md:h-16 rounded-full hover:brightness-125 transition duration-500`} > <a href={slides[currentIndex].buttonUrl}>Saiba mais</a></button>
         </div>
         <ul className='flex flex-col list-disc md:self-end md:mb-10'>
             {slides[currentIndex].li?.map((item, index) => {

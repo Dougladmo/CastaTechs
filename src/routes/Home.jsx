@@ -29,7 +29,7 @@ const Home = () => {
       <div id='solucoes' className='w-full py-5 md:w-9/12 m-auto mt-14'>
         <h2 className='pb-10 m-auto text-4xl font-bold text-center text-[#01b1af] drop-shadow-md md:text-5xl md:mx-28'>
           <AttentionSeeker className='flex flex-col gap-6' effect='pulse' cascade damping={0.3}>
-            <span className='uppercase md:self-start'>Soluções QUE transformam</span><span className='uppercase md:self-center'></span><span className='uppercase md:self-end'>seu negócio</span>
+            <span className='uppercase md:self-start'>Soluções QUE </span><span className='uppercase md:self-center'>transformam</span><span className='uppercase md:self-end'>seu negócio</span>
           </AttentionSeeker>
         </h2>
         <Fade duration={1500}>
