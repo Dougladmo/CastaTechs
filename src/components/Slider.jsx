@@ -29,7 +29,7 @@ function Slider() {
       MobileUrl: background2,
       buttonColor1: '#ffc556',
       buttonColor2: '#f3a613',
-      buttonUrl: '#',
+      buttonUrl: 'https://castatech.sualojaonline.com.br/',
     },
     {
       title: 'SERVIÇOS BANCÁRIOS',
@@ -40,7 +40,7 @@ function Slider() {
       MobileUrl: backgroud3Mobile,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',
-      buttonUrl: 'https://castatech.sualojaonline.com.br/',
+      buttonUrl: '#',
     },
     {
       title: 'ERP FULL',
