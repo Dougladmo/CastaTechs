@@ -157,7 +157,7 @@ const Home = () => {
               <IoIosPhonePortrait size={55} className='text-white' />
             </AttentionSeeker>
             <h4 className='text-4xl font-medium drop-shadow-md'>Fones</h4>
-            <p className='mb-2 text-xl text-center drop-shadow-lg'>(11) 96061-5651 <span className='block pt-2'>(11) 96061-5651</span></p>
+            <p className='mb-2 text-xl text-center drop-shadow-lg'>(11) 96061-5651 <span className='block pt-2'>(91) 98458-0270</span></p>
           </div>
           <div className={`h-72 px-5 w-full flex flex-col items-center justify-center gap-4 bg-[#f6f6f6]`}>
             <AttentionSeeker triggerOnce effect='shakeX' duration={1000} >
