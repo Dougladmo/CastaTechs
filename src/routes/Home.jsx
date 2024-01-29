@@ -33,7 +33,7 @@ const Home = () => {
           </AttentionSeeker>
         </h2>
         <Fade duration={1500}>
-          <div id='sua-loja-wrapper' className='lg:items-baseline lg:grid lg:grid-cols-2 lg:justify-evenly py-10'>
+          <div id='sua-loja-wrapper' className='lg:items-baseline lg:grid lg:grid-cols-2 lg:gap-y-10 lg:justify-evenly py-10'>
             <Zoom triggerOnce duration={1000}>
               <div id='sua-loja' style={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -82,6 +82,52 @@ const Home = () => {
                     <li>E tem mais veja...</li>
                   </ul>
                   <a className='w-56 py-5 m-auto mt-5 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Orçamento</a>
+                </div>
+              </div>
+              <div id='sua-loja ERP' style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url(${gifBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+              }} className='md:h-full md:w-9/12 md:rounded-xl md:py-10 md:m-auto shadow-inner py-10'>
+                <img className='w-40 m-auto md:w-32 bg-white rounded-xl mb-5' src={Cart} alt="litle cart store" />
+                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>PLATAFORMA E-COMMERCE</h3>
+                <div className='shadow-top flex flex-col lg:gap-5 text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
+                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>CRIE SUA LOJA VIRTUAL</h3>
+                  <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
+                    <li>Sua Loja Aberta 24hrs/dia</li>
+                    <li>Publique seus produtos com destaques</li>
+                    <li>Meios de Pagamentos seguros</li>
+                    <li>Checkout transparente</li>
+                    <li>Infraestrutura em nuvem Amazon AWS</li>
+                    <li>Integração com Facebook e Instagram</li>
+                    <li>Integração com os maiores Markeplaces</li>
+                    <li>SEO: Otimização e melhores práticas </li>
+                    <li>Plataforma responsiva: smartphone, ipad, note, desktop</li>
+                    <li>E tem mais veja...</li>
+                  </ul>
+                  <a className='w-56 py-5 m-auto mt-6 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Orçamento</a>
+                </div>
+              </div>
+              <div id='sua-loja Cyber security' style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url(${gifBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+              }} className='md:h-full md:w-9/12 md:rounded-xl md:py-10 md:m-auto shadow-inner py-10'>
+                <img className='w-40 m-auto md:w-32 bg-white rounded-xl mb-5' src={Cart} alt="litle cart store" />
+                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>PLATAFORMA E-COMMERCE</h3>
+                <div className='shadow-top flex flex-col lg:gap-5 text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
+                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>CRIE SUA LOJA VIRTUAL</h3>
+                  <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
+                    <li>Sua Loja Aberta 24hrs/dia</li>
+                    <li>Publique seus produtos com destaques</li>
+                    <li>Meios de Pagamentos seguros</li>
+                    <li>Checkout transparente</li>
+                    <li>Infraestrutura em nuvem Amazon AWS</li>
+                    <li>Integração com Facebook e Instagram</li>
+                    <li>Integração com os maiores Markeplaces</li>
+                    <li>SEO: Otimização e melhores práticas </li>
+                    <li>Plataforma responsiva: smartphone, ipad, note, desktop</li>
+                    <li>E tem mais veja...</li>
+                  </ul>
+                  <a className='w-56 py-5 m-auto mt-6 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Orçamento</a>
                 </div>
               </div>
             </Zoom>
