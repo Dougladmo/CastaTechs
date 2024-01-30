@@ -5,6 +5,7 @@ import background1 from '../assets/background1.jpg'
 import background2 from '../assets/background2.jpg'
 import background3 from '../assets/background3.jpg'
 import background4 from '../assets/background4.jpg'
+import background5 from '../assets/background5.png'
 import backgroud3Mobile from '../assets/backgroundMobileBank.jpeg'
 
 function Slider() {
@@ -13,7 +14,7 @@ function Slider() {
       title: 'FÁBRICA DE SOFTWARE',
       titleColor: '#3accc3',
       subTitle: 'Potencializando Seu Negócio',
-      li: ['Desenvolvimento Java 6 a 21 LTS', 'Spring Framework and Spring Boot', 'Microsservice com SpringBoot', 'Integrações com API REST Full', 'Front end JFS, JSP e Angular (Node.js)', 'APIGEE Edge Gerenciamento de API'],
+      li: ['Desenvolvimento Java 6 a 21 LTS', 'Spring Framework and Spring Boot', 'Microsservice com SpringBoot', 'Integrações com API REST Full', 'Front End JSF, JSP e Angular, Node e React', 'APIGEE Edge Gerenciamento de API'],
       url: background1,
       MobileUrl: background1,
       buttonColor1: '#8da157',
@@ -49,6 +50,17 @@ function Slider() {
       li: ['Gestão Financeira-DRE', 'Gestão de Vendas', 'Gestão de Estoques por grade', 'PDV', 'Integração contábil', 'Conta bancária integrada', 'E-commerce'],
       url: background4,
       MobileUrl: background4,
+      buttonColor1: '#65a2af',
+      buttonColor2: '#398493',
+      buttonUrl: '#',
+    },
+    {
+      title: 'CYBER SECURITY',
+      subTitle: 'Software de backup e proteção cibernética da Acronis para domicílios, e empresas MP',
+      titleColor: '#3accc3',
+      li: ['Cyber Protect Home Office', 'Cyber Backup', 'Cyber Protect Cloud'],
+      url: background5,
+      MobileUrl: background5,
       buttonColor1: '#65a2af',
       buttonColor2: '#398493',
       buttonUrl: '#',

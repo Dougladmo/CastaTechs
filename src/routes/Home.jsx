@@ -87,6 +87,61 @@ const Home = () => {
             </Zoom>
           </div>
         </Fade>
+        <Fade duration={1500}>
+          <div id='sua-loja-wrapper' className='lg:items-baseline lg:grid lg:grid-cols-2 lg:justify-evenly py-10'>
+            <Zoom triggerOnce duration={1000}>
+              <div id='sua-loja' style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url(${gifBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+              }} className='md:h-full md:w-9/12 md:rounded-xl md:py-10 md:m-auto shadow-inner py-10'>
+                <img className='w-40 m-auto md:w-32 bg-white rounded-xl mb-5' src={Cart} alt="litle cart store" />
+                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>ERP COMPLETO</h3>
+                <div className='shadow-top flex flex-col lg:gap-5 text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
+                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>EMISSOR DE NOTAS FISCAIS</h3>
+                  <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
+                    <li>Certificado Digital gratuito</li>
+                    <li>NFS-e, NF-e, MDF-e, NFP-e, NFC-e</li>
+                    <li>Controle de vendas</li>
+                    <li>Controle Financeiro</li>
+                    <li>PDV para Frente de Caixa</li>
+                    <li>Controle de estoque</li>
+                    <li>Gestão de Serviços</li>
+                    <li>Relatórios completos</li>
+                    <li>Cadastros de clientes, fornecedores e funcionários</li>
+                    <li>E tem mais veja...</li>
+                  </ul>
+                  <a className='w-56 py-5 m-auto mt-6 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Orçamento</a>
+                </div>
+              </div>
+            </Zoom>
+            <Zoom triggerOnce duration={1000}>
+              <div id='fabrica-software'
+              style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${gifBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} 
+              className='md:h-full md:w-9/12 md:rounded-xl md:py-10 md:m-auto shadow-inner py-10 mt-5'
+              >
+                <img className='w-40 m-auto md:w-60 bg-white rounded-xl mb-5' src={Consul} alt="litle cart store" />
+                <h3 className='max-w-[340px] md:max-w-none m-auto text-center text-white font-semibold drop-shadow-md text-3xl'>CYBER SECURITY</h3>
+                <div className='shadow-top flex flex-col lg:gap-[19.5px] text-white font-semibold items-center max-w-[340px] m-auto mt-4'>
+                  <h3 className='my-2 text-2xl text-center drop-shadow-lg'>PROTEÇÃO CIBERNÉTICA</h3>
+                  <ul className='flex flex-col max-w-xs m-auto ml-5 text-lg font-normal text-left list-disc lg:h-72 drop-shadow-md'>
+                    <li>Dispositivos: movéis e servidores</li>
+                    <li>Antimalware e backup forense</li>
+                    <li>Gerenciamento de enpoints com IA</li>
+                    <li>Proteção de dados com IA</li>
+                    <li>Proteção contra ransomware e cryptojacking</li>
+                    <li>Filtragem de URLs</li>
+                    <li>Multiplataforma:Win, macOS, Android</li>
+                    <li>Criptografia AES-256 de ponta a ponta</li>
+                    <li>API para integrações personalizadas</li>
+                    <li>E tem mais veja...</li>
+                  </ul>
+                  <a className='w-56 py-5 m-auto mt-5 text-xl text-center text-white transition duration-500 rounded-xl bg-gradient-to-b from-blue-300 to-blue-800 hover:opacity-80' href="#">Orçamento</a>
+                </div>
+              </div>
+            </Zoom>
+          </div>
+        </Fade>
       </div>
       <div id='img links' className='my-5 md:flex md:justify-center'>
         <AttentionSeeker className='flex flex-col gap-6' effect='pulse' duration={1500} cascade damping={0.3}>
@@ -164,7 +219,7 @@ const Home = () => {
               <FaRegPaperPlane size={55} />
             </AttentionSeeker>
             <h4 className='text-3xl font-medium drop-shadow-md'>Email</h4>
-            <p className='mb-2 text-xl text-center drop-shadow-lg'>contato@castatecnologia.com <span className='block pt-2'>info@castatecnologia.com</span></p>
+            <p className='mb-2 text-xl text-center drop-shadow-lg'>contato@castatec.com.br <span className='block pt-2'>info@castatec.com.br</span></p>
           </div>
           <div className={`h-72 px-5 w-full flex flex-col text-white items-center justify-center gap-5 bg-[#437da3]`}>
             <AttentionSeeker triggerOnce effect='shakeX' duration={1000} >
